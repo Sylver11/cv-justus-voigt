@@ -157,14 +157,10 @@
                 getWhatever(status);
 
 
-                console.log(bodyScrollLock)
-                // 1. Import the functions
-                // const bodyScrollLock = require('body-scroll-lock');
-                // 1. Get a target element that you want to persist scrolling for (such as a
-                //  modal/lightbox/flyout/nav).
+                //locking the screen the moment the scrollMoving is below or equal to 2
                 const targetElement = document.querySelector("body");
-                if (scrollMoving >= 3) {
-                    console.log('higher than 3');
+                if (scrollMoving > 4) {
+                    console.log('higher than 4');
                     console.log(bodyScrollLock.disableBodyScroll(targetElement));
 
                     // 3. ...in some event handler after hiding the target element...
@@ -174,10 +170,6 @@
 
 
                 }
-
-                // 4. Useful if we have called disableBodyScroll for multiple target elements,
-                // and we just want a kill-switch to undo all that.
-                // bodyScrollLock.clearAllBodyScrollLocks();
             });
 
 
@@ -225,13 +217,14 @@
                                 ratio *
                                 1.5)) + 'px');
                         scrollMoving = 0;
-
-                    } else {
-                        // imageout();
-                        console.log(
-                            "stops formal scroll and continues custom scroll"
-                        );
                     }
+
+                    //  else {
+                    //     // imageout();
+                    //     console.log(
+                    //         "stops formal scroll and continues custom scroll"
+                    //     );
+                    // }
                 })
 
 
@@ -267,11 +260,14 @@
         ////////////////function that populates the html ///////////////////////
         function getWhatever(status) {
             console.log(scrollMoving);
-            console.log(status);
+            // console.log(status);
             switch (status) {
                 case "introSection":
                     $('#introButton').addClass('selected')
                     $('#skillsButton').removeClass('selected')
+                    $('#portfolioButton').removeClass('selected')
+                    $('#educationButton').removeClass('selected')
+                    $('#experienceButton').removeClass('selected')
                     $('article').empty();
                     $('article').addClass('intro');
                     $('article').append(
@@ -302,6 +298,9 @@
                 case "skillsSection":
                     $('#skillsButton').addClass('selected')
                     $('#introButton').removeClass('selected')
+                    $('#experienceButton').removeClass('selected')
+                    $('#portfolioButton').removeClass('selected')
+                    $('#educationButton').removeClass('selected')
                     $('article').empty();
                     $('article').addClass('skills');
                     $('article').append('<a id="skills">\
@@ -339,6 +338,48 @@
                             </div>\
                             </div>\
                             </a>')
+                    break;
+                case "experienceSection":
+                    $('#experienceButton').addClass('selected')
+                    $('#skillsButton').removeClass('selected')
+                    $('#educationButton').removeClass('selected')
+                    $('#introButton').removeClass('selected')
+                    $('#portfolioButton').removeClass('selected')
+                    $('article').empty();
+                    $('article').addClass('skills');
+                    $('article').append('<h3>Experience</h3>\
+          <div>\
+            <p>this is the experience section\
+          </div>')
+                    break;
+                case "educationSection":
+                    $('#educationButton').addClass('selected')
+                    $('#portfolioButton').removeClass('selected')
+                    $('#experienceButton').removeClass('selected')
+                    $('#skillsButton').removeClass('selected')
+                    $('#introButton').removeClass('selected')
+                    $('article').empty();
+                    $('article').addClass('education');
+                    $('article').append('<h3>Education</h3>\
+          <div>\
+              <p>this is the experience section\
+          </div>')
+
+                    break;
+                case "portfolioSection":
+                    $('#portfolioButton').addClass('selected')
+                    $('#educationButton').removeClass('selected')
+                    $('#skillsButton').removeClass('selected')
+                    $('#introButton').removeClass('selected')
+                    $('#experienceButton').removeClass('selected')
+                    $('article').empty();
+                    $('article').addClass('portfolio');
+                    $('article').append('<h3>portfolio</h3>\
+          <div>\
+              <p>this is the portfolio section\
+          </div>')
+
+
             };
         };
 
