@@ -90,8 +90,7 @@ main {
 
 .navbar-container {
     width: 20%;
-    padding-top: 200px;
-    margin: 100px;
+    margin: 100px 100px 100px 50px;
 
 }
 
@@ -104,19 +103,22 @@ main {
     animation-delay: 1.5s;
     animation-fill-mode: forwards;
     width: 50%;
-    /* position: sticky; */
     padding-left: 0;
     top: 0;
     list-style-type: none;
-    /* background-color: #1a1a1a; */
     font-size: 15px;
     border-bottom-right-radius: 10px;
 }
 
 
 .selected {
-    color: blue;
-    border-left: 4px solid blue;
+    font-size: 18px;
+    -webkit-transition: background-color 0.24s ease;
+    -moz-transition: background-color 0.25s ease;
+    -o-transition: background-color 0.25s ease;
+    transition: font-size 0.25s ease;
+    /* color: blue; */
+    /* border-left: 4px solid blue; */
 }
 
 @keyframes navbar {
@@ -129,58 +131,49 @@ main {
     }
 }
 
-@media screen and (max-width:800px) {
-    .navbar {
-        text-align: center;
-    }
-}
 
-@media screen and (max-width: 600px) {
-    .navbar {
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .navbar {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    .navbar {
-        font-size: 18px;
-    }
-}
 
 
 #list_total {
     padding-left: 0px;
     margin-top: 0;
+    list-style-type: none;
+    padding-block-start: 4em;
 }
 
-a:link {
+
+
+
+/* the actual color of the nav font */
+li a {
+    color: rgb(3, 3, 3);
+}
+
+
+
+.li_navbar {
+    min-height: 77px;
+    transition: font-size 0.25s ease;
+}
+
+
+/* #experienceButton:active {
     text-decoration: none;
     color: rgb(2, 2, 1);
     -webkit-transition: background-color 0.24s ease-out;
     -moz-transition: background-color 0.25s ease-out;
     -o-transition: background-color 0.25s ease-out;
     transition: background-color 0.25s ease-out;
-}
+} */
 
-a:visited {
-    /* color: white;  */
+/* a:visited {
+    color: white; 
     text-decoration: none
-}
+} */
 
-li a {
-    color: rgb(7, 6, 6);
-    padding: 0px 26px;
-    margin: 0;
-    text-decoration: none;
-}
 
-@media screen and (max-width: 800px) {
+
+/* @media screen and (max-width: 800px) {
     li a {
         padding: 0px 10px;
     }
@@ -196,15 +189,8 @@ li a {
     li a {
         padding: 0px 6px;
     }
-}
-
-.li_navbar {
-    /* display: inline; */
-    padding-block-start: 4em;
-    list-style-type: none;
-}
-
-a:link:hover {
+} */
+/* a:link:hover {
     color: #1a1a1a;
 }
 
@@ -218,7 +204,30 @@ li a:hover {
 .btn:hover {
     background-color: #111;
     border-bottom-right-radius: 10px;
+} */
+/* @media screen and (max-width:800px) {
+    .navbar {
+        text-align: center;
+    }
 }
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        font-size: 20px;
+    }
+} */
+
+/* @media screen and (max-width: 420px) {
+    .navbar {
+        font-size: 18px;
+    }
+} */
 
 
 

@@ -7,14 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="jquery.scroll-reveal.js"></script>
-
-    <!-- <script src="//code.jquery.com/jquery.min.js"> </script> -->
-
-
-
     <title>Justus Voigt</title>
 </head>
+
+
+
+
 
 <body>
 
@@ -30,79 +28,18 @@
 
     <!-- Main Section With Navbar and dynamic content -->
     <main>
-
-        <script src="bodyScrollLock.js"></script>
-
-        <!-- Navigation Bar -->
-        <script>
-            var scrollMoving = 0;
-
-            function switchChannel(el) {
-                // find all the elements in your channel list and loop over them
-                Array.prototype.slice.call(document.querySelectorAll('ol[data-tag="channelList"] li')).forEach(
-                    function (element) {
-
-                        element.classList.remove('selected');
-                    });
-
-                //add the class selected on click of menu bar 
-                el.classList.add('selected');
-
-                //retrieve the value of section selected and set it equal to the scrollMoving variable 
-                scrollMoving = el.value;
-
-                //initiate function getWhatever everytime a click event has fired
-                getWhatever(status);
-                // console.log(scrollMoving);
-
-                // console.log(scrollMoving);
-
-                //this local comparison runs only when the user uses the menu bar for navigation instead of the scrolling
-                if (scrollMoving >= 1 &&
-                    scrollMoving <= 10) {
-                    status = "introSection";
-
-                } else if (scrollMoving >= 11 &&
-                    scrollMoving <=
-                    16) {
-                    status = "skillsSection";
-
-                } else if (scrollMoving >= 17 &&
-                    scrollMoving <=
-                    22) {
-                    status = "experienceSection";
-                } else if (scrollMoving >= 23 &&
-                    scrollMoving <=
-                    28) {
-                    status = "educationSection";
-                } else if (scrollMoving >= 29 &&
-                    scrollMoving <=
-                    34) {
-                    status = "portfolioSection";
-
-                }
-
-
-                //everytime a value changes here the function gets called. Because otherwise it would only change on the next scroll 
-                getWhatever(status);
-            }
-        </script>
-
-
         <div class=navbar-container>
             <nav class="navbar" id="navbar2">
                 <ol id="list_total" data-tag="channelList">
-                    <li class="li_navbar" id="introButton" onclick="switchChannel(this)" value="10"><a
-                            class="words">Intro</a></li>
-                    <li class="li_navbar" id="skillsButton" onclick="switchChannel(this)" value="15"><a
-                            class="words">Skills</a>
+                    <li class="li_navbar" id="introButton" onclick="switchChannel(this)" value="10"><a>Intro</a></li>
+                    <li class="li_navbar" id="skillsButton" onclick="switchChannel(this)" value="15"><a>Skills</a>
                     </li>
-                    <li class="li_navbar" id="experienceButton" onclick="switchChannel(this)" value="20"><a
-                            class="words">Experience</a></li>
-                    <li class="li_navbar" id="educationButton" onclick="switchChannel(this)" value="25"><a
-                            class="words">Education</a></li>
-                    <li class="li_navbar" id="portfolioButton" onclick="switchChannel(this)" value="30"><a
-                            class="words">Portfolio</a></li>
+                    <li class="li_navbar" id="experienceButton" onclick="switchChannel(this)" value="20">
+                        <a>Experience</a></li>
+                    <li class="li_navbar" id="educationButton" onclick="switchChannel(this)" value="25"><a>Education</a>
+                    </li>
+                    <li class="li_navbar" id="portfolioButton" onclick="switchChannel(this)" value="30"><a>Portfolio</a>
+                    </li>
                 </ol>
             </nav>
         </div>
@@ -112,12 +49,13 @@
         </section>
     </main>
 
-
+    <script src="bodyScrollLock.js"></script>
     <script type="text/javascript" src="jquery.mousewheel.js"></script>
 
     <script>
         let delta = 0;
         var status;
+        var scrollMoving = 0;
 
         $(document).ready(function () {
             $("body").mousewheel(function (event, delta) {
@@ -167,10 +105,48 @@
                 } else { // 2. ...in some event handler after showing the target element...disable body scroll
                     // bodyScrollLock.enableBodyScroll(targetElement);
                     bodyScrollLock.clearAllBodyScrollLocks();
-
-
                 }
             });
+
+
+
+
+            function switchChannel(el) {
+                // find all the elements in your channel list and loop over them
+                Array.prototype.slice.call(document.querySelectorAll('ol[data-tag="channelList"] li')).forEach(
+                    function (element) {
+                        element.classList.remove('selected');
+                    });
+
+                //add the class selected on click of menu bar
+                el.classList.add('selected');
+
+                //retrieve the value of section selected and set it equal to the scrollMoving variable
+                scrollMoving = el.value;
+
+                //initiate function getWhatever everytime a click event has fired
+                getWhatever(status);
+
+                //this local comparison runs only when the user uses the menu bar for navigation instead of the scrolling
+                if (scrollMoving >= 1 &&
+                    scrollMoving <= 10) {
+                    status = "introSection";
+                } else if (scrollMoving >= 11 &&
+                    scrollMoving <= 16) {
+                    status = "skillsSection";
+                } else if (scrollMoving >= 17 &&
+                    scrollMoving <= 22) {
+                    status = "experienceSection";
+                } else if (scrollMoving >= 23 &&
+                    scrollMoving <= 28) {
+                    status = "educationSection";
+                } else if (scrollMoving >= 29 &&
+                    scrollMoving <= 34) {
+                    status = "portfolioSection";
+                }
+                //everytime a value changes here the function gets called.Because otherwise it would only change on the next scroll 
+                getWhatever(status);
+            }
 
 
 
@@ -218,13 +194,6 @@
                                 1.5)) + 'px');
                         scrollMoving = 0;
                     }
-
-                    //  else {
-                    //     // imageout();
-                    //     console.log(
-                    //         "stops formal scroll and continues custom scroll"
-                    //     );
-                    // }
                 })
 
 
@@ -382,10 +351,6 @@
 
             };
         };
-
-
-
-        // console.log(defaultStop);
     </script>
 
 
