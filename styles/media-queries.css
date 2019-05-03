@@ -1,0 +1,17 @@
+@media screen and (max-width: 600px) {
+  main {
+    width: 100%;
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar-container {
+    margin: 10px 0px 190px 10px;
+  }
+}

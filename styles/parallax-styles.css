@@ -1,0 +1,50 @@
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /**
+   * Default height
+   */
+    height: 100%;
+}
+
+.caption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: flex-start;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: flex-start;
+
+    height: 100%;
+}
+
+.caption .justus-voigt {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 29px;
+    letter-spacing: 10px;
+    margin-top: 200px;
+}
+
+.caption .junior-web-developer {
+    background-color: #111;
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    letter-spacing: 9px;
+    /* margin-top: 200px; */
+}

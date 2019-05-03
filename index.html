@@ -5,7 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="images/Justus-Sylvester.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link href="styles/hamburgers.css" rel="stylesheet">
+    <link href="styles/intro-styles.css" rel="stylesheet">
+    <link href="styles/skills-styles.css" rel="stylesheet">
+    <link href="styles/education-styles.css" rel="stylesheet">
+    <link href="styles/parallax-styles.css" rel="stylesheet">
+    <link href="styles/navbar-styles.css" rel="stylesheet">
+    <link href="styles/media-queries.css" rel="stylesheet">
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Justus Voigt</title>
 </head>
@@ -15,10 +25,10 @@
 
 
 <body>
-
+    <!-- 16101 -->
 
     <!-- Title Picture -->
-    <div class="parallax" id="parallax-1" data-image-src="woodstock-outlook-justus.jpg" data-height="750px">
+    <div class="parallax" id="parallax-1" data-image-src="images/woodstock-outlook-justus.jpg" data-height="750px">
         <div class="caption">
             <span class="justus-voigt">Justus Voigt</span>
             <span class="junior-web-developer">Junior Web-developer</span>
@@ -27,8 +37,55 @@
 
 
     <!-- Main Section With Navbar and dynamic content -->
+
+
+
+    <script>
+        function switchChannel(el) {
+            // find all the elements in your channel list and loop over them
+            Array.prototype.slice.call(document.querySelectorAll('ol[data-tag="channelList"] li')).forEach(
+                function (element) {
+                    element.classList.remove('selected');
+                });
+
+            //add the class selected on click of menu bar
+            el.classList.add('selected');
+
+            //retrieve the value of section selected and set it equal to the scrollMoving variable
+            scrollMoving = el.value;
+
+            //initiate function getWhatever everytime a click event has fired
+            getWhatever(status);
+
+            //this local comparison runs only when the user uses the menu bar for navigation instead of the scrolling
+            if (scrollMoving >= 1 &&
+                scrollMoving <= 10) {
+                status = "introSection";
+            } else if (scrollMoving >= 11 &&
+                scrollMoving <= 16) {
+                status = "skillsSection";
+            } else if (scrollMoving >= 17 &&
+                scrollMoving <= 22) {
+                status = "experienceSection";
+            } else if (scrollMoving >= 23 &&
+                scrollMoving <= 28) {
+                status = "educationSection";
+            } else if (scrollMoving >= 29 &&
+                scrollMoving <= 34) {
+                status = "portfolioSection";
+            }
+            //everytime a value changes here the function gets called.Because otherwise it would only change on the next scroll 
+            getWhatever(status);
+        }
+    </script>
+
     <main>
         <div class=navbar-container>
+            <button class="hamburger hamburger--slider" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
             <nav class="navbar" id="navbar2">
                 <ol id="list_total" data-tag="channelList">
                     <li class="li_navbar" id="introButton" onclick="switchChannel(this)" value="10"><a>Intro</a></li>
@@ -44,13 +101,216 @@
             </nav>
         </div>
         <section>
-            <article>
+            <article class="intro">
+                <h2>Intro</h2>
+                <div id="me-the-coder">
+
+                    <div class="span2">
+                        <div class="face_total">
+                            <img class="face" src="images/Justus-Sylvester.png" alt="Banner Image" />
+                        </div>
+                        <div class="body_total">
+                            <div class="body1">
+                            </div>
+                        </div>
+                        <div class="legs_total">
+                            <div class="leg_left"></div>
+                            <div class="leg_right"></div>
+                        </div>
+                        <div class="feet_total">
+                            <div class="foot_left"></div>
+                            <div class="foot_right"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>
+                            < h3>Me the coder< h3>
+                        </h3>
+                        <p>
+                            < p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum lacinia
+                                faucibus.
+                                Curabitur vestibulum nibh
+                                at erat eleifend dignissim.Pellentesque habitant morbi tristique senectus et netus et
+                                malesuada
+                                fames ac
+                                turpisegestas.Etiam euismod blandit erat ac tincidunt.Pellentesque mattis quis erat non
+                                fermentum../"<p>"/
+                                </p>
+                    </div>
+                </div>
+                <div id="me-the-gardener">
+                    <div class="span3">
+                        <div class="face_total">
+                            <img class="face" src="images/Justus-Sylvester.png" alt="Banner Image" />
+                        </div>
+                        <div class="body-total-gardener">
+                            <div class="left-arm">
+                                <div class="left-unterarm"></div>
+                            </div>
+                            <div class="body-gardener">
+                            </div>
+                            <div class="right-arm">
+                                <div class="right-unterarm"></div>
+                            </div>
+                        </div>
+                        <div class="legs_total">
+                            <div class="leg_left"></div>
+                            <div class="leg_right"></div>
+                        </div>
+                        <div class="feet_total">
+                            <div class="foot_left"></div>
+                            <div class="foot_right"></div>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="box">
+                            <div class="stem rain">
+                                <div class="leaf leaf01">
+                                    <div class="line"></div>
+                                </div>
+                                <div class="leaf leaf02">
+                                    <div class="line"></div>
+                                </div>
+                                <div class="leaf leaf03">
+                                    <div class="line"></div>
+                                </div>
+                                <div class="leaf leaf04">
+                                    <div class="line"></div>
+                                </div>
+                                <div class="leaf leaf05">
+                                    <div class="line"></div>
+                                </div>
+                                <div class="leaf leaf06">
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                            <div class="pot"></div>
+                            <div class="pot-top"></div>
+                        </div>
+                    </div>
+
+
+                </div>
             </article>
+
+
+
+            <article class="skills">
+                <h3>Skills</h3>
+                <div class="flip_boxes">
+                    <div class="flip_html">
+
+                        <div class="flip_front_html">
+                            <img class="img_html" src="images/html_logo_new.png" alt="html_logo">
+                        </div>
+                        <!-- <p class="revealText">As for any Web-developer a good understanding of HTML is
+                                fundamental. My skills in HTML are very good and working with it is no problem
+                            </p> -->
+                        <!-- <div class="flip_back_html">
+                                <p id="html-text">As for any Web-developer a good understanding of HTML is
+                                    fundamental. My skills in HTML are very good and working with it is no problem
+                                </p>
+                            </div> -->
+
+                    </div>
+                    <!-- <p id="revealText">As for any Web-developer a good understanding of HTML is
+                        fundamental. My skills in HTML are very good and working with it is no problem
+                    </p> -->
+
+                    <div class="flip_css">
+                        <div class="flip_inner_css">
+                            <div class="flip_front_css">
+                                <img class="img_css" src="images/css_logo_new.png" alt="css_logo">
+                            </div>
+                            <div class="flip_back_css">
+                                <p>As my website my already show is that I have a very keen interest for CSS
+                                    animation. My initial idea was to make the website exclusively HTML and CSS
+                                    because CSS aninamtion and transitions seemed to offer a solution for
+                                    anything
+                                    uselful</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip_js">
+                        <div class="flip_inner_js">
+                            <div class="flip_front_js">
+                                <img class="img_js" src="images/js_logo_new.png" alt="js_logo">
+                            </div>
+                            <div class="flip_back_js">
+                                <p>As for </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip_js">
+                        <div class="flip_inner_js">
+                            <div class="flip_front_js">
+                                <img class="img_js" src="images/jquery_logo_new.gif" alt="jq_logo">
+                            </div>
+                            <div class="flip_back_js">
+                                <p>As for </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p id="revealText">As for any Web-developer a good understanding of HTML is
+                    fundamental. My skills in HTML are very good and working with it is no problem
+                </p>
+
+            </article>
+
+
+            <article class="experience">
+                <h3>Experience</h3>
+                <div>
+                    <p>this is the experience section
+                </div>
+            </article>
+
+
+            <article class="education">
+                <h3>Education</h3>
+                <div class="education-inner">
+                    <div class="education-inner-codespace">
+                        <div class="codespace-logo">
+                            <img src="images\codespace-primary-logo.svg" alt="codespace-logo">
+                        </div>
+                        <h4>Web Development Intensive Course</h4>
+                        <p>Duration: 15-weeks<br>
+                            Outcome: Good understanding of ....</p>
+                    </div>
+                    <div class="education-inner-stellenbosch">
+                        <div class="sun-logo">
+                            <img src="images\sun-logo.svg" alt="sun-logo">
+                        </div>
+                        <h4>BA - Politics, Philosophy & Economics</h4>
+                        <p>Duration: 4 years<br>
+                            Outcome: Good understanding of ....</p>
+                    </div>
+                    <div class="education-inner-dhps">
+                        <div class="dhps-logo">
+                            <img src="images\dhps-logo.png" alt="dhps-logo">
+                        </div>
+                        <h4>DIAP - German Matriculation</h4>
+                        <p>Duration: 3 years<br>
+                            Outcome: Good understanding of ....</p>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="portfolio">
+                <h3>portfolio</h3>
+
+            </article>
+
+
         </section>
     </main>
 
-    <script src="bodyScrollLock.js"></script>
-    <script type="text/javascript" src="jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="scripts/bodyscrolllock.js"></script>
+    <script type="text/javascript" src="scripts/jquery.mousewheel.js"></script>
 
     <script>
         let delta = 0;
@@ -58,6 +318,32 @@
         var scrollMoving = 0;
 
         $(document).ready(function () {
+            $(window).scroll(function () {
+                $('main').css("opacity", $(window).scrollTop() / 760)
+                $('.caption').css("opacity", 1 - $(window).scrollTop() / 400)
+            });
+            $("button").click(function () {
+                $("button").toggleClass("is-active");
+                // if ($('.navbar').attr('position')) {
+                //     $('.navbar').removeAttr('position');
+                // } else {
+                //     $('.navbar').attr('position', 'absolute');
+                // }
+                // if ($('.navbar-container').attr('position')) {
+                //     $('.navbar-container').removeAttr('position')
+                // } else {
+                //     $('.navbar-container').attr('position', 'absolute')
+                // };
+
+
+
+                $('.navbar-container').toggleClass('navbar-is-active');
+
+
+                $('section').toggleClass('section-deactivated');
+                $('.navbar').toggleClass('navbar-active');
+
+            })
             $("body").mousewheel(function (event, delta) {
                 // console.log(event.deltaX, event.deltaY, event.deltaFactor);
                 if (delta > 0) {
@@ -111,42 +397,42 @@
 
 
 
-            function switchChannel(el) {
-                // find all the elements in your channel list and loop over them
-                Array.prototype.slice.call(document.querySelectorAll('ol[data-tag="channelList"] li')).forEach(
-                    function (element) {
-                        element.classList.remove('selected');
-                    });
+            // function switchChannel(el) {
+            //     // find all the elements in your channel list and loop over them
+            //     Array.prototype.slice.call(document.querySelectorAll('ol[data-tag="channelList"] li')).forEach(
+            //         function (element) {
+            //             element.classList.remove('selected');
+            //         });
 
-                //add the class selected on click of menu bar
-                el.classList.add('selected');
+            //     //add the class selected on click of menu bar
+            //     el.classList.add('selected');
 
-                //retrieve the value of section selected and set it equal to the scrollMoving variable
-                scrollMoving = el.value;
+            //     //retrieve the value of section selected and set it equal to the scrollMoving variable
+            //     scrollMoving = el.value;
 
-                //initiate function getWhatever everytime a click event has fired
-                getWhatever(status);
+            //     //initiate function getWhatever everytime a click event has fired
+            //     getWhatever(status);
 
-                //this local comparison runs only when the user uses the menu bar for navigation instead of the scrolling
-                if (scrollMoving >= 1 &&
-                    scrollMoving <= 10) {
-                    status = "introSection";
-                } else if (scrollMoving >= 11 &&
-                    scrollMoving <= 16) {
-                    status = "skillsSection";
-                } else if (scrollMoving >= 17 &&
-                    scrollMoving <= 22) {
-                    status = "experienceSection";
-                } else if (scrollMoving >= 23 &&
-                    scrollMoving <= 28) {
-                    status = "educationSection";
-                } else if (scrollMoving >= 29 &&
-                    scrollMoving <= 34) {
-                    status = "portfolioSection";
-                }
-                //everytime a value changes here the function gets called.Because otherwise it would only change on the next scroll 
-                getWhatever(status);
-            }
+            //     //this local comparison runs only when the user uses the menu bar for navigation instead of the scrolling
+            //     if (scrollMoving >= 1 &&
+            //         scrollMoving <= 10) {
+            //         status = "introSection";
+            //     } else if (scrollMoving >= 11 &&
+            //         scrollMoving <= 16) {
+            //         status = "skillsSection";
+            //     } else if (scrollMoving >= 17 &&
+            //         scrollMoving <= 22) {
+            //         status = "experienceSection";
+            //     } else if (scrollMoving >= 23 &&
+            //         scrollMoving <= 28) {
+            //         status = "educationSection";
+            //     } else if (scrollMoving >= 29 &&
+            //         scrollMoving <= 34) {
+            //         status = "portfolioSection";
+            //     }
+            //     //everytime a value changes here the function gets called.Because otherwise it would only change on the next scroll 
+            //     getWhatever(status);
+            // }
 
 
 
@@ -187,11 +473,20 @@
                     var visible = isInViewport(this)
                     if (visible) {
                         var diff = scrolled - initY
+                        // console.log(diff)
                         var ratio = Math.round((diff / height) * 100)
-                        $(this).css('background-position', 'center ' + parseInt(
-                            -(
-                                ratio *
-                                1.5)) + 'px');
+                        $(this).css('background-position', 'center ' + parseInt(-(ratio *
+                            1.5)) + 'px');
+                        // console.log(ratio / 100)
+
+
+
+
+                        // $("section").fadeTo("1", parseInt(ratio / 100), function () {
+                        //     Animation complete.
+                        //     console.log("hello")
+                        // });
+                        // $('main').css('opacity', 1 - parseInt(ratio / 100));
                         scrollMoving = 0;
                     }
                 })
@@ -232,36 +527,55 @@
             // console.log(status);
             switch (status) {
                 case "introSection":
+
+
+                    // var el = $('.intro'),
+                    //     newone = el.clone(true);
+
+                    // el.before(newone);
+
+                    // $("." + el.attr("class") + ":last").remove();
+
+
+
+
+
                     $('#introButton').addClass('selected')
                     $('#skillsButton').removeClass('selected')
                     $('#portfolioButton').removeClass('selected')
                     $('#educationButton').removeClass('selected')
                     $('#experienceButton').removeClass('selected')
-                    $('article').empty();
-                    $('article').addClass('intro');
-                    $('article').append(
-                        '<h3>Intro</h3>\
-                        <div class="span2">\
-                            <div class= "face_total" >\
-                            <img class="face"\
-                                src="Justus-Sylvester.png"\
-                                alt="Banner Image" />\
-                            </div>\
-                            <div class="body_total">\
-                                <div class="body1">\
-                                </div>\
-                            </div>\
-                            <div class="legs_total">\
-                                <div class="leg_left"></div>\
-                                <div class="leg_right"></div>\
-                            </div>\
-                            <div class="feet_total">\
-                                <div class="foot_left"></div>\
-                                <div class="foot_right"></div>\
-                            </div>\
-                        </div>\
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum lacinia faucibus. Curabitur vestibulum nibh at erat eleifend dignissim.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpisegestas.Etiam euismod blandit erat ac tincidunt.Pellentesque mattis quis erat non fermentum.Aenean diam mi, auctor in mi non, molestie condimentum mi.Interdum et malesuada fames ac ante ipsum primis in faucibus.Interdum et malesuada.</p>'
-                    );
+                    $('.intro').css("display", "flex")
+                    $('.experience').css("display", "none")
+                    $('.skills').css("display", "none")
+                    $('.education').css("display", "none")
+                    $('.portfolio').css("display", "none")
+                    // $('article').empty();
+                    // $('article.intro').replaceWith('article.skills')
+                    // $('article').addClass('intro');
+                    // $('article').append(
+                    // '<h3>Intro</h3>\
+                    // <div class="span2">\
+                    //     <div class= "face_total" >\
+                    //     <img class="face"\
+                    //         src="Justus-Sylvester.png"\
+                    //         alt="Banner Image" />\
+                    //     </div>\
+                    //     <div class="body_total">\
+                    //         <div class="body1">\
+                    //         </div>\
+                    //     </div>\
+                    //     <div class="legs_total">\
+                    //         <div class="leg_left"></div>\
+                    //         <div class="leg_right"></div>\
+                    //     </div>\
+                    //     <div class="feet_total">\
+                    //         <div class="foot_left"></div>\
+                    //         <div class="foot_right"></div>\
+                    //     </div>\
+                    // </div>\
+                    // <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum lacinia faucibus. Curabitur vestibulum nibh at erat eleifend dignissim.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpisegestas.Etiam euismod blandit erat ac tincidunt.Pellentesque mattis quis erat non fermentum.Aenean diam mi, auctor in mi non, molestie condimentum mi.Interdum et malesuada fames ac ante ipsum primis in faucibus.Interdum et malesuada.</p>'
+                    // );
                     break;
 
                 case "skillsSection":
@@ -270,43 +584,48 @@
                     $('#experienceButton').removeClass('selected')
                     $('#portfolioButton').removeClass('selected')
                     $('#educationButton').removeClass('selected')
-                    $('article').empty();
-                    $('article').addClass('skills');
-                    $('article').append('<a id="skills">\
-                        <h3>Skills</h3>\
-                        <div class="flip_boxes">\
-                            <div class="flip_html">\
-                                <div class="flip_inner_html">\
-                                    <div class="flip_front_html">\
-                                        <img class="img_html" src="html_logo_new.png" alt="html_logo">\
-                                    </div>\
-                                    <div class="flip_back_html">\
-                                        <p>Lorem ipsum </p>\
-                                    </div>\
-                                </div>\
-                            </div>\
-                            <div class="flip_css">\
-                                <div class="flip_inner_css">\
-                                    <div class="flip_front_css">\
-                                        <img class="img_css" src="css_logo_new.png" alt="css_logo">\
-                                    </div>\
-                                    <div class="flip_back_css">\
-                                        <p>Lorem ipsum dolor</p>\
-                                    </div>\
-                                </div>\
-                            </div>\
-                            <div class="flip_js">\
-                                <div class="flip_inner_js">\
-                                    <div class="flip_front_js">\
-                                        <img class="img_js" src="js_logo_new.png" alt="js_logo">\
-                                    </div>\
-                                    <div class="flip_back_js">\
-                                        <p>Lorem ipsum </p>\
-                                    </div>\
-                                </div>\
-                            </div>\
-                            </div>\
-                            </a>')
+                    $('.skills').css("display", "block")
+                    $('.intro').css("display", "none")
+                    $('.experience').css("display", "none")
+                    $('.portfolio').css("display", "none")
+                    $('.education').css("display", "none")
+                    // $('article').empty();
+                    // $('article').addClass('skills');
+                    // $('article.intro').replaceWith('article.skills')
+                    // $('article').append('<h3>Skills</h3>\
+                    //     <div class="flip_boxes">\
+                    //         <div class="flip_html">\
+                    //             <div class="flip_inner_html">\
+                    //                 <div class="flip_front_html">\
+                    //                     <img class="img_html" src="html_logo_new.png" alt="html_logo">\
+                    //                 </div>\
+                    //                 <div class="flip_back_html">\
+                    //                     <p>Lorem ipsum </p>\
+                    //                 </div>\
+                    //             </div>\
+                    //         </div>\
+                    //         <div class="flip_css">\
+                    //             <div class="flip_inner_css">\
+                    //                 <div class="flip_front_css">\
+                    //                     <img class="img_css" src="css_logo_new.png" alt="css_logo">\
+                    //                 </div>\
+                    //                 <div class="flip_back_css">\
+                    //                     <p>Lorem ipsum dolor</p>\
+                    //                 </div>\
+                    //             </div>\
+                    //         </div>\
+                    //         <div class="flip_js">\
+                    //             <div class="flip_inner_js">\
+                    //                 <div class="flip_front_js">\
+                    //                     <img class="img_js" src="js_logo_new.png" alt="js_logo">\
+                    //                 </div>\
+                    //                 <div class="flip_back_js">\
+                    //                     <p>Lorem ipsum </p>\
+                    //                 </div>\
+                    //             </div>\
+                    //         </div>\
+                    //         </div>\
+                    //         </a>')
                     break;
                 case "experienceSection":
                     $('#experienceButton').addClass('selected')
@@ -314,12 +633,19 @@
                     $('#educationButton').removeClass('selected')
                     $('#introButton').removeClass('selected')
                     $('#portfolioButton').removeClass('selected')
-                    $('article').empty();
-                    $('article').addClass('skills');
-                    $('article').append('<h3>Experience</h3>\
-          <div>\
-            <p>this is the experience section\
-          </div>')
+                    $('.experience').css("display", "block")
+                    $('.skills').css("display", "none")
+                    $('.intro').css("display", "none")
+                    $('.portfolio').css("display", "none")
+                    $('.education').css("display", "none")
+
+
+                    // $('article').empty();
+                    // $('article').addClass('skills');
+                    //             $('article').append('<h3>Experience</h3>\
+                    //   <div>\
+                    //     <p>this is the experience section\
+                    //   </div>')
                     break;
                 case "educationSection":
                     $('#educationButton').addClass('selected')
@@ -327,12 +653,17 @@
                     $('#experienceButton').removeClass('selected')
                     $('#skillsButton').removeClass('selected')
                     $('#introButton').removeClass('selected')
-                    $('article').empty();
-                    $('article').addClass('education');
-                    $('article').append('<h3>Education</h3>\
-          <div>\
-              <p>this is the experience section\
-          </div>')
+                    $('.education').css("display", "flex")
+                    $('.experience').css("display", "none")
+                    $('.skills').css("display", "none")
+                    $('.intro').css("display", "none")
+                    $('.portfolio').css("display", "none")
+                    // $('article').empty();
+                    // $('article').addClass('education');
+                    //             $('article').append('<h3>Education</h3>\
+                    //   <div>\
+                    //       <p>this is the experience section\
+                    //   </div>')
 
                     break;
                 case "portfolioSection":
@@ -341,12 +672,18 @@
                     $('#skillsButton').removeClass('selected')
                     $('#introButton').removeClass('selected')
                     $('#experienceButton').removeClass('selected')
-                    $('article').empty();
-                    $('article').addClass('portfolio');
-                    $('article').append('<h3>portfolio</h3>\
-          <div>\
-              <p>this is the portfolio section\
-          </div>')
+                    $('.portfolio').css("display", "block")
+                    $('.education').css("display", "none")
+                    $('.experience').css("display", "none")
+                    $('.skills').css("display", "none")
+                    $('.intro').css("display", "none")
+
+                    // $('article').empty();
+                    // $('article').addClass('portfolio');
+                    //             $('article').append('<h3>portfolio</h3>\
+                    //   <div>\
+                    //       <p>this is the portfolio section\
+                    //   </div>')
 
 
             };

@@ -1,0 +1,66 @@
+.education-inner {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.education-inner-codespace {
+    width: 440px;
+    height: 120px;
+    margin: 10px 40px 40px 40px;
+    border: grey;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.codespace-logo {
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+.codespace-logo img {
+    width: 100%;
+}
+
+
+.education-inner-stellenbosch {
+    width: 350px;
+    height: 160px;
+    margin-bottom: 40px;
+    border: grey;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.sun-logo {
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.sun-logo img {
+    width: 100%;
+}
+
+.education-inner-dhps {
+    width: 350px;
+    height: 160px;
+    border: grey;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 70px;
+}
+
+.dhps-logo {
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.dhps-logo img {
+    width: 100%;
+}

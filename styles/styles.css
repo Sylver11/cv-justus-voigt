@@ -1,0 +1,90 @@
+body {
+    margin: 0px;
+    padding: none;
+    /* overflow-y: hidden; */
+}
+
+h4 {
+    margin: 5px 5px 5px 10px;
+}
+
+p {
+    margin: 10px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+}
+
+
+
+/* section on the side containing all the content */
+section {
+    width: 80%;
+    margin-top: 40px;
+    height: 500px;
+    /* display: flex; */
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-deactivated {
+    visibility: hidden;
+}
+
+
+
+.intro {
+    /* font-family: 'Courier New', Courier, monospace; */
+    display: none;
+    animation-name: contentChange;
+    animation-duration: 1s;
+    flex-direction: column;
+
+    /* animation-fill-mode: both; */
+}
+
+.skills {
+    /* display: flex;
+    flex-direction: column; */
+    display: none;
+    animation-name: contentChange;
+    animation-duration: 1s;
+}
+
+.experience {
+    display: none;
+    animation-name: contentChange;
+    animation-duration: 1s;
+}
+
+.education {
+    display: none;
+    flex-direction: column;
+    animation-name: contentChange;
+    animation-duration: 1s;
+}
+
+.portfolio {
+    display: none;
+    animation-name: contentChange;
+    animation-duration: 1s;
+}
+
+@keyframes contentChange {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
