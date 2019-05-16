@@ -1,6 +1,74 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
+
+
+  .navbar-container {
+    /* width: 30%; */
+    margin: 0px 0px 10px 30px;
+    /* flex-direction: column; */
+    /* align-content: center; */
+    height: 560px;
+  }
+
   main {
     width: 100%;
+  }
+
+
+
+
+
+  .flip-inner-umthunzi,
+  .flip-back-umthunzi {
+    width: 200px;
+    height: 170px;
+  }
+
+
+  /* .flip-back-umthunzi {
+    width: 200px;
+    height: 170px;
+  } */
+
+  .flip-back-spellgeek,
+  .flip-inner-spellgeek {
+    width: 200px;
+    height: 170px;
+  }
+
+  /* .flip-back-spellgeek {
+    width: 200px;
+    height: 170px;
+  } */
+
+  .navbar-container {
+    /* width: 30%; */
+    margin: 0px 0px 50px 20px;
+    /* flex-direction: column; */
+    /* align-content: center; */
+    height: 560px;
+  }
+
+  .github {
+
+    padding-right: 10px;
+    padding-left: 60px;
+
+
+  }
+
+  .linkedin {
+
+    padding-right: 10px;
+  }
+
+
+
+}
+
+@media screen and (max-width: 900px) {
+  .navbar-container {
+    width: 15%;
+    height: 400px;
   }
 
   .hamburger {
@@ -14,4 +82,31 @@
   .navbar-container {
     margin: 10px 0px 190px 10px;
   }
+
+  #me-the-coder {
+    width: 600px;
+  }
+
+  .icon-caption {
+    display: none;
+  }
+
+  .github {
+    padding-right: 40px;
+    padding-left: 60px;
+    padding-top: 50px;
+  }
+
+  .linkedin {
+
+    padding-right: 40px;
+    padding-top: 50px;
+  }
+
+  .mail {
+
+    padding-right: 40px;
+    padding-top: 50px;
+  }
+
 }

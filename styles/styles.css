@@ -1,15 +1,41 @@
 body {
     margin: 0px;
+    /* margin-bottom: -100px; */
     padding: none;
     /* overflow-y: hidden; */
+    font-family: 'PT Serif',
+        serif;
+
+    background-color: white;
+    /* -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    -o-transform: skewY(-5deg);
+    transform: skewY(-5deg); */
+    /* bottom: 0; */
+    /* overflow: hidden;
+    margin-bottom: 0px;
+    padding-bottom: 0px */
+    /* e3deca */
+    /* d8d3bf; */
 }
 
+
+h3 {
+    /* margin-left: 20px; */
+    letter-spacing: 7px;
+}
+
+
 h4 {
-    margin: 5px 5px 5px 10px;
+    margin: 5px 5px 5px 0px;
+    letter-spacing: 1px;
+    /* letter-spacing: 7px; */
 }
 
 p {
-    margin: 10px;
+    margin: 10px 10px 10px 0px;
+    letter-spacing: 1px;
 }
 
 ::-webkit-scrollbar {
@@ -22,18 +48,34 @@ main {
     flex-direction: row;
     width: 90%;
     margin: auto;
+    margin-top: -60px;
+    -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    -o-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+    /* overflow: hidden; */
+    z-index: 2;
+    /* overflow: hidden; */
 }
 
 
 
 /* section on the side containing all the content */
 section {
+    -webkit-transform: skewY(5deg);
+    -moz-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    -o-transform: skewY(5deg);
+    transform: skewY(5deg);
     width: 80%;
-    margin-top: 40px;
+    margin-top: 60px;
     height: 500px;
+    flex-shrink: 3;
     /* display: flex; */
     flex-direction: column;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 .section-deactivated {
@@ -45,6 +87,7 @@ section {
 .intro {
     /* font-family: 'Courier New', Courier, monospace; */
     display: none;
+    /* letter-spacing: 7px; */
     animation-name: contentChange;
     animation-duration: 1s;
     flex-direction: column;
@@ -58,12 +101,16 @@ section {
     display: none;
     animation-name: contentChange;
     animation-duration: 1s;
+    flex-direction: column;
+    /* width: 100%; */
+
 }
 
 .experience {
     display: none;
     animation-name: contentChange;
     animation-duration: 1s;
+    flex-direction: column;
 }
 
 .education {
@@ -77,6 +124,7 @@ section {
     display: none;
     animation-name: contentChange;
     animation-duration: 1s;
+    flex-direction: column;
 }
 
 @keyframes contentChange {

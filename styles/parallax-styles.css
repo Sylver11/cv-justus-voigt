@@ -4,19 +4,27 @@
     background-position: center 0;
     background-repeat: no-repeat;
     background-size: cover;
-
+    -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    -o-transform: skewY(-5deg);
+    transform: skewY(-5deg);
     /**
    * Default height
    */
     height: 100%;
+    top: -60px;
+    /* overflow: hidden; */
 }
 
 .caption {
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
+    /* opacity: 1 !important; */
 
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -27,24 +35,47 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: flex-start;
+    background-color: black;
+    padding-left: 50px;
+    /* top: -50px; */
+    /* height: 330px; */
+    /* overflow: hidden; */
+    position: sticky;
+    top: -60px;
+    /* overflow: hidden; */
 
-    height: 100%;
+    /* height: 100%; */
 }
 
 .caption .justus-voigt {
-    background-color: #111;
+    /* background-color: #111; */
     color: #fff;
     padding: 18px;
+    padding-top: 0;
+    /* padding-top: 30px; */
     font-size: 29px;
     letter-spacing: 10px;
-    margin-top: 200px;
+    margin-top: 160px;
+    -webkit-transform: skewY(5deg);
+    -moz-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    -o-transform: skewY(5deg);
+    transform: skewY(5deg);
+
 }
 
 .caption .junior-web-developer {
-    background-color: #111;
+    /* background-color: #111; */
     color: #fff;
     padding: 5px;
+    padding-bottom: 20px;
     font-size: 12px;
     letter-spacing: 9px;
+    margin-bottom: 30px;
     /* margin-top: 200px; */
+    -webkit-transform: skewY(5deg);
+    -moz-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    -o-transform: skewY(5deg);
+    transform: skewY(5deg);
 }

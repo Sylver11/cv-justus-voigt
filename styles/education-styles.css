@@ -6,10 +6,15 @@
     align-content: space-around;
 }
 
+.education-inner-inner {
+    margin-left: 10px;
+}
+
 .education-inner-codespace {
-    width: 440px;
-    height: 120px;
-    margin: 10px 40px 40px 40px;
+    width: 75%;
+    height: 140px;
+    /* margin: 10px 40px 40px 40px; */
+    margin: auto;
     border: grey;
     border-style: solid;
     border-width: 1px;
@@ -28,9 +33,11 @@
 
 
 .education-inner-stellenbosch {
-    width: 350px;
-    height: 160px;
-    margin-bottom: 40px;
+    width: 80%;
+    height: 173px;
+    /* margin-bottom: 40px; */
+    margin: auto;
+    margin-top: 20px;
     border: grey;
     border-style: solid;
     border-width: 1px;
@@ -47,12 +54,14 @@
 }
 
 .education-inner-dhps {
-    width: 350px;
+    width: 70%;
     height: 160px;
     border: grey;
     border-style: solid;
     border-width: 1px;
-    margin-left: 70px;
+    /* margin-left: 70px; */
+    margin: auto;
+    margin-top: 20px;
 }
 
 .dhps-logo {
