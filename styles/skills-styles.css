@@ -85,6 +85,7 @@
 
 .css-text {
     display: none;
+    font-size: 14px;
 }
 
 .css-text-show {
@@ -138,6 +139,7 @@
 
 .js-text {
     display: none;
+    font-size: 14px;
 }
 
 .js-text-show {
@@ -188,6 +190,7 @@
 
 .jq-text {
     display: none;
+    font-size: 14px;
 }
 
 .jq-text-show {
@@ -238,6 +241,7 @@
 
 .php-text {
     display: none;
+    font-size: 14px;
 }
 
 .php-text-show {
@@ -287,6 +291,7 @@
 
 .mysql-text {
     display: none;
+    font-size: 14px;
 }
 
 .mysql-text-show {

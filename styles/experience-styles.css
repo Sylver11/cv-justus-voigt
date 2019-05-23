@@ -12,9 +12,10 @@
 
 .experience-inner-mk-electronic {
     width: 80%;
-    height: 130px;
+    height: 140px;
     /* margin: 20px 40px 40px 40px; */
     margin: auto;
+    margin-top: 20px;
     border: grey;
     border-style: solid;
     border-width: 1px;
@@ -38,9 +39,9 @@
 
 .experience-inner-spellgeek {
     width: 85%;
-    height: 150px;
-    margin: 10px 40px 20px 40px;
-    /* margin: auto; */
+    height: 170px;
+    /* margin: 10px 40px 20px 40px */
+    margin: auto;
     border: grey;
     border-style: solid;
     border-width: 1px;
@@ -57,10 +58,16 @@
     /* background-color: grey; */
 }
 
+.captions-experience {
+    font-size: 13px;
+}
+
 .experience-inner-allgaier {
-    width: 70%;
-    height: 120px;
-    margin: 10px 40px 20px 40px;
+    width: 75%;
+    height: 130px;
+    /* margin: 10px 40px 20px 40px; */
+    margin: auto;
+    margin-top: 20px;
     border: grey;
     border-style: solid;
     border-width: 1px;

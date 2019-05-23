@@ -33,6 +33,11 @@ h4 {
     /* letter-spacing: 7px; */
 }
 
+h5 {
+    margin-top: 10px;
+    font-weight: normal;
+}
+
 p {
     margin: 10px 10px 10px 0px;
     letter-spacing: 1px;
