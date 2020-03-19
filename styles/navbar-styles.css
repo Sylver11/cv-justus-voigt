@@ -1,0 +1,113 @@
+.navbar-container {
+    width: 30%;
+    margin: 0px 0px 50px 30px;
+    flex-direction: column;
+    align-content: center;
+    height: 560px;
+}
+
+.navbar-is-active {
+    width: 85%;
+    position: absolute;
+}
+
+
+.navbar {
+    z-index: 2;
+    opacity: 1;
+    animation-name: navbar;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    width: 80%;
+    padding-left: 0;
+    padding-top: 40px;
+    top: 0;
+    list-style-type: none;
+    font-size: 14px;
+    background-color: #111;
+    letter-spacing: 7px;
+    overflow: hidden;
+}
+
+.navbar-active {
+    display: block !important;
+    text-align: center;
+    color: white;
+    position: absolute;
+    z-index: -1;
+
+}
+
+
+.selected {
+    font-size: 16px;
+    letter-spacing: 9px;
+    -webkit-transition: background-color 0.24s ease;
+    -moz-transition: background-color 0.25s ease;
+    -o-transition: background-color 0.25s ease;
+    transition: font-size 0.25s ease;
+    color: white;
+}
+
+/* @keyframes navbar {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+} */
+
+
+
+
+#list_total {
+    padding-left: 0px;
+    margin-top: 0;
+    list-style-type: none;
+    padding-block-start: 4em;
+    -webkit-transform: skewY(5deg);
+    -moz-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    -o-transform: skewY(5deg);
+    transform: skewY(5deg);
+}
+
+
+
+
+/* the actual color of the nav font */
+li {
+    color: rgb(3, 3, 3);
+    transition: font-size 0.25s ease;
+    color: white;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+
+
+.li_navbar {
+    min-height: 77px;
+    /* transition: font-size 0.25s ease; */
+}
+
+
+
+
+li a:hover {
+    color: black;
+    /* background-color: #ffff33; */
+    transition: font-size 0.25s ease;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+}
+
+
+.btn:hover {
+    background-color: #111;
+    border-bottom-right-radius: 10px;
+}

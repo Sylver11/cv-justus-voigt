@@ -1,0 +1,456 @@
+@media screen and (max-width: 1100px) {
+
+
+
+
+  main {
+    width: 100%;
+  }
+
+  h5 {
+    font-size: 8px !important;
+    padding-top: 6px;
+  }
+
+
+  .navbar-container {
+    /* width: 30%; */
+    margin: 0px 0px 10px 30px;
+    /* flex-direction: column; */
+    /* align-content: center; */
+    height: 560px;
+  }
+
+  .flip-umthunzi {
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+
+
+  .flip-inner-umthunzi,
+  .flip-back-umthunzi {
+    width: 200px;
+    height: 170px;
+  }
+
+
+  /* .flip-back-umthunzi {
+    width: 200px;
+    height: 170px;
+  } */
+  .flip_spellgeek {
+    padding-left: 0px;
+    padding-right: 10px;
+  }
+
+  .flip-back-spellgeek,
+  .flip-inner-spellgeek {
+    width: 200px;
+    height: 170px;
+  }
+
+
+  .flip-todo {
+    padding-top: 10px;
+    padding-left: 0px;
+    /* padding-right: 10px; */
+  }
+
+  /* .flip-back-spellgeek {
+    width: 200px;
+    height: 170px;
+  } */
+
+  .navbar-container {
+    /* width: 30%; */
+    margin: 0px 0px 50px 20px;
+    /* flex-direction: column; */
+    /* align-content: center; */
+    height: 560px;
+  }
+
+  .icon-caption {
+    font-size: 10px;
+  }
+
+  .github {
+
+    padding-right: 10px;
+    padding-left: 60px;
+
+
+  }
+
+  .linkedin {
+
+    padding-right: 10px;
+  }
+
+
+
+
+}
+
+@media screen and (max-width: 911px) {
+  .navbar-container {
+    width: 15%;
+    height: 400px;
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar-container {
+    margin: 10px 0px 190px 10px;
+  }
+
+  #me-the-coder {
+    width: 600px;
+  }
+
+  .icon-caption {
+    display: none;
+  }
+
+  .github {
+    padding-right: 40px;
+    padding-left: 60px;
+    padding-top: 50px;
+  }
+
+  .linkedin {
+
+    padding-right: 40px;
+    padding-top: 50px;
+  }
+
+  .mail {
+
+    padding-right: 40px;
+    padding-top: 50px;
+  }
+
+}
+
+@media screen and (max-width: 790px) {
+
+
+
+  h3 {
+    margin-top: 0px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  section {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 95%;
+  }
+
+  #me-the-coder {
+
+    width: 90%;
+    height: 450px;
+  }
+
+  .navbar-container {
+    margin: 10px;
+    height: 50px;
+  }
+
+  .experience-inner-spellgeek {
+    width: 95%;
+  }
+
+  .experience-inner-allgaier {
+    width: 88%;
+    margin-top: 10px;
+  }
+
+  .experience-inner-mk-electronic {
+
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  .education-inner-codespace {
+
+    width: 88%;
+
+  }
+
+
+  .education-inner-stellenbosch {
+    width: 95%;
+    margin-top: 10px;
+  }
+
+  .education-inner-dhps {
+    width: 90%;
+    margin-top: 10px;
+
+
+  }
+}
+
+
+
+@media screen and (max-width: 560px) {
+
+  h3 {
+    margin-bottom: 8px;
+  }
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  section {
+    height: 400px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .hamburger {
+    padding-left: 10px;
+  }
+
+  .caption-intro {
+    font-size: 13px;
+  }
+
+  .animation-text {
+    width: 150px;
+  }
+
+  .wrapper {
+    height: 160px;
+  }
+
+  .span2 {
+    height: 160px;
+    width: 100px;
+  }
+
+  .logos {
+    height: 250px;
+    margin-bottom: 0;
+  }
+
+  .html-text {
+    font-size: 13px;
+  }
+
+  .css-text {
+    font-size: 13px;
+  }
+
+  .js-text {
+    font-size: 13px;
+  }
+
+  .jq-text {
+    font-size: 13px;
+  }
+
+  .mysql-text {
+    font-size: 13px;
+  }
+
+  .php-text {
+    font-size: 13px;
+  }
+
+  .headings-experience {
+    font-size: 13px;
+  }
+
+  .captions-experience {
+    font-size: 11px;
+    margin: 6px;
+    margin-left: 4px;
+  }
+
+  .experience-inner-mk-electronic {
+    width: 80%;
+    margin-left: 0px;
+  }
+
+  .captions-education {
+    font-size: 11px;
+    /* margin: 0px; */
+    margin-left: 4px;
+  }
+
+  .headings-education {
+    font-size: 13px;
+  }
+
+  .education-inner-dhps {
+    margin-left: 0;
+    width: 60%;
+  }
+
+  footer {
+    height: 130px;
+  }
+
+  .linkedin {
+    padding-top: 70px;
+  }
+
+  .mail {
+    padding-top: 70px;
+  }
+
+  .github {
+    padding-top: 70px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 375px) {
+
+
+
+  .navbar-container {
+    width: 100%;
+  }
+
+  section {
+    height: 610px;
+    /* width: 94%; */
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+
+  .logos {
+    margin-bottom: 100px;
+  }
+
+  .css-img {
+    margin-bottom: 5px;
+  }
+
+  .html-img {
+    margin-bottom: 5px;
+  }
+
+  .js-img {
+    margin-bottom: 5px;
+  }
+
+  .jq-img {
+    margin-bottom: 5px;
+  }
+
+
+  .experience-inner {
+    height: 580px;
+  }
+
+  .experience-inner-spellgeek {
+    height: 190px;
+  }
+
+  .experience-inner-mk-electronic {
+    margin-left: auto;
+  }
+
+  .education-inner {
+
+    height: 580%;
+  }
+
+  .education-inner-codespace {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .education-inner-stellenbosch {
+    height: 143px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* margin: auto; */
+
+  }
+
+  .education-inner-dhps {
+    height: 120px;
+    margin-left: auto;
+    width: 80%;
+    margin-top: 20px;
+    /* margin: auto; */
+
+  }
+
+  .portfolio-websites {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flip_spellgeek {
+    width: 200px;
+    height: 148px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-right: 0;
+  }
+
+  .flip-hotel-booking-form {
+    width: 200px;
+    height: 130px;
+    padding: 0;
+    padding-top: 10px;
+
+  }
+
+  .flip-umthunzi {
+    width: 200px;
+    height: 130px;
+
+    /* padding-right: 0; */
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  .flip-todo {
+    width: 200px;
+    height: 130px;
+
+    padding: 0;
+    padding-top: 10px;
+  }
+
+
+
+  .github {
+    padding-top: 85px;
+  }
+
+  .linkedin {
+    padding-top: 85px;
+  }
+
+  .mail {
+    padding-top: 85px;
+  }
+
+
+
+}

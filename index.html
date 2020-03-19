@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/Justus-Sylvester.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link href="styles/hamburgers.css" rel="stylesheet">
+    <link href="styles/intro-styles.css" rel="stylesheet">
+    <link href="styles/skills-styles.css" rel="stylesheet">
+    <link href="styles/education-styles.css" rel="stylesheet">
+    <link href="styles/parallax-styles.css" rel="stylesheet">
+    <link href="styles/navbar-styles.css" rel="stylesheet">
+    <link href="styles/experience-styles.css" rel="stylesheet">
+    <link href="styles/portfolio-styles.css" rel="stylesheet">
+    <link href="styles/footer-styles.css" rel="stylesheet">
+    <link href="styles/media-queries.css" rel="stylesheet">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Justus Voigt</title>
+</head>
+
+
+
+
+
+<body>
+    <!-- 16101 -->
+
+    <!-- Title Picture -->
+    <div class="parallax" id="parallax-1" data-image-src="images/woodstock-outlook-justus.jpg" data-height="850px">
+        <div class="caption">
+            <span class="justus-voigt">Justus Voigt</span>
+            <span style="padding: 10px;" class="junior-web-developer">Junior Web-developer</span>
+        </div>
+    </div>
+
+
+
+    <!-- Main Section With Navbar and dynamic content -->
+
+
+
+    <script>
+        function switchChannel(el) {
+            // find all the elements in your channel list and loop over them
+            Array.prototype.slice.call(document.querySelectorAll('ol[data-tag="channelList"] li')).forEach(
+                function (element) {
+                    element.classList.remove('selected');
+                });
+
+            //add the class selected on click of menu bar
+            el.classList.add('selected');
+
+            //retrieve the value of section selected and set it equal to the scrollMoving variable
+            scrollMoving = el.value;
+
+            //initiate function getWhatever everytime a click event has fired
+            getWhatever(status);
+
+            //this local comparison runs only when the user uses the menu bar for navigation instead of the scrolling
+            if (scrollMoving >= 1 &&
+                scrollMoving <= 10) {
+                status = "introSection";
+            } else if (scrollMoving >= 11 &&
+                scrollMoving <= 16) {
+                status = "skillsSection";
+            } else if (scrollMoving >= 17 &&
+                scrollMoving <= 22) {
+                status = "experienceSection";
+            } else if (scrollMoving >= 23 &&
+                scrollMoving <= 28) {
+                status = "educationSection";
+            } else if (scrollMoving >= 29 &&
+                scrollMoving <= 34) {
+                status = "portfolioSection";
+            }
+            //everytime a value changes here the function gets called.Because otherwise it would only change on the next scroll 
+            getWhatever(status);
+        }
+    </script>
+
+    <main>
+        <div class=navbar-container>
+            <button class="hamburger hamburger--slider" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <nav class="navbar" id="navbar2">
+                <ol id="list_total" data-tag="channelList">
+                    <li class="li_navbar" id="introButton" onclick="switchChannel(this)" value="10"><a>Intro</a></li>
+                    <li class="li_navbar" id="skillsButton" onclick="switchChannel(this)" value="15"><a>Skills</a>
+                    </li>
+                    <li class="li_navbar" id="experienceButton" onclick="switchChannel(this)" value="20">
+                        <a>Experience</a></li>
+                    <li class="li_navbar" id="educationButton" onclick="switchChannel(this)" value="25"><a>Education</a>
+                    </li>
+                    <li class="li_navbar" id="portfolioButton" onclick="switchChannel(this)" value="30"><a>Portfolio</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        <section>
+            <article class="intro">
+                <h3>Intro</h3>
+                <div id="me-the-coder">
+
+                    <!-- <div class="me-the-coder-text"> -->
+                    <h4>
+                        Me the coder 70% / Me the gardener 30%
+                    </h4>
+
+                    <div class="animation-text">
+                        <div class="span2">
+                            <div class="face_total">
+                                <img class="face" src="images/Justus-Sylvester.png" alt="Banner Image" />
+                            </div>
+                            <div class="body_total">
+                                <div class="body1">
+                                </div>
+                            </div>
+                            <div class="legs_total">
+                                <div class="leg_left"></div>
+                                <div class="leg_right"></div>
+                            </div>
+                            <div class="feet_total">
+                                <div class="foot_left"></div>
+                                <div class="foot_right"></div>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <div class="box">
+                                <div class="stem rain">
+                                    <div class="leaf leaf01">
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="leaf leaf02">
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="leaf leaf03">
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="leaf leaf04">
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="leaf leaf05">
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="leaf leaf06">
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                                <div class="pot"></div>
+                                <div class="pot-top"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="caption-intro"> Schaffe, schaffe Häusle baue - are four German words that sum me up
+                        pretty well. They translate to " Work hard, work hard, build a little house" which symbolically
+                        stands for the diligence of the Swabian people in the South-West of Germany. Being a Swabian, I
+                        pride myself in being reliable and consistent in my work. I'm a system thinker. I first try to
+                        establish a pattern in order to find the most effective solution. I love to build (not houses
+                        particularly) but systems that endure, increase efficiency and have a lasting effect on others.
+                        Thus, in a working environment one would usually find me at the coffee machine trying to figure
+                        out how to connect it to the internet to let it run an automated script so nobody has to
+                        struggle with an empty coffee jar again.<br>
+
+                        When I’m not building systems, you can find me with my second passion - plants. My garden is
+                        cluttered with herbs and
+                        vegetables. The independence of plants to be able to grow by themselves fascinates me. My
+                        favorite plants are beans and
+                        coriander.
+
+                    </p>
+                    <!-- </div> -->
+                    <!-- <div class="animation-me-the-gardener-text"> -->
+
+                </div>
+                <!-- </div> -->
+                <!-- <div class="me-the-gardener-text">
+                                            <h3>Me the Gardener</h3>
+                                            <p>I do admit, a long day at office does have its toll on me. Which is why I enjoy outdoorsy
+                                                stuff like
+                                                beatiful hikes along mountains or a few hours in my garden. Having a passion for plants
+                                                my
+                                                garden is cluttered with herbs and vegetables. I assume the independence of plants to be
+                                                able to
+                                                grow by themselfs fascinates me. My favorite plants are beans and coriander.</p>
+                
+                
+                                        </div> -->
+                <!-- <div id="me-the-gardener">
+                    <div class="animation"> -->
+                <!-- <div class="span3">
+                            <div class="face_total">
+                                <img class="face" src="images/Justus-Sylvester.png" alt="Banner Image" />
+                            </div>
+                            <div class="body-total-gardener">
+                                <div class="left-arm">
+                                    <div class="left-unterarm"></div>
+                                </div>
+                                <div class="body-gardener">
+                                </div>
+                                <div class="right-arm">
+                                    <div class="right-unterarm"></div>
+                                </div>
+                            </div>
+                            <div class="legs-total-gardener">
+                                <div class="leg-left-gardener"></div>
+                                <div class="leg-right-gardener"></div>
+                            </div>
+                            <div class="feet-total-gardener">
+                                <div class="foot-left-gardener"></div>
+                                <div class="foot-right-gardener"></div>
+                            </div>
+                        </div> -->
+                <!-- <div class="wrapper">
+                            <div class="box">
+                                <div class="stem rain">
+                                    <div class="leaf leaf01">
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="leaf leaf02">
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="leaf leaf03">
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="leaf leaf04">
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="leaf leaf05">
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="leaf leaf06">
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                                <div class="pot"></div>
+                                <div class="pot-top"></div>
+                            </div>
+                        </div> -->
+                <!-- </div>
+
+
+
+                </div> -->
+            </article>
+
+
+
+            <article class="skills">
+                <h3>Skills</h3>
+                <div class="logos">
+                    <!-- <div class="html-logo"> -->
+                    <img class="html-img" src="images/html_logo_new.png" alt="html_logo">
+                    <!-- </div> -->
+                    <!-- <div class="css-logo"> -->
+                    <img class="css-img" src="images/css_logo_new.png" alt="css_logo">
+                    <!-- </div> -->
+                    <!-- <div class="js-logo"> -->
+                    <img class="js-img" src="images/js_logo_new.png" alt="js_logo">
+                    <!-- </div> -->
+                    <!-- <div class="jq-logo"> -->
+                    <img class="jq-img" src="images/jquery_logo_new.gif" alt="jq_logo">
+                    <!-- </div> -->
+                    <!-- <div class="php-logo"> -->
+                    <img class="php-img" src="images/php-logo.png" alt="php-logo">
+                    <!-- </div> -->
+                    <!-- <div class="mysql-logo"> -->
+                    <img class="mysql-img" src="images/mysql-logo.png" alt="mysql-logo">
+                    <!-- </div> -->
+                    <!-- <div class="sass-logo"> -->
+                    <!-- <img class="sass-img" src="images/sass-logo.svg" alt="sass-logo"> -->
+                    <!-- </div> -->
+                </div>
+
+                <p class="html-text">As every developer’s career starts with HTML, mine did
+                    too. HTML is a foundational language and I can confidently claim
+                    to have a good understanding of it.
+
+                </p>
+                <p class="css-text">I have a sort of love-hate relationship with CSS. On the
+                    one hand, it is essential to any website, but on the other hand
+                    there are so many functionalities to learn like CSS animations. I used CSS animation in my
+                    introduction section, but
+                    getting it where it is now took some time. Despite this, I feel that CSS is a powerful language with
+                    a broad spectrum of
+                    functionalities that are underappreciated.</p>
+                <p class="js-text">Most of the functionality of this website was built using
+                    JavaScript. For example, the scrollLock function which actives
+                    the moment my title picture is outside the viewport and the custom scroll bar on the left which
+                    listens to scrollEvents.
+                    It is a lot of fun playing around with Javascript on the front-end but it also powers the back-end
+                    of this website by
+                    running a node.js server.
+                </p>
+                <p class="jq-text">Jquery is the Swiss Army knife of Javascript libraries.
+                    Again, much of the front-end of this website is based on Jquery
+                    code like this text which uses a toggle function to add and remove a class. I personally love Jquery
+                    just because it
+                    saves me so much time.
+                </p>
+                <p class="php-text">Most of the applications under the Portfolio section are
+                    written in PHP. For the Umthunzi Farming Community project I
+                    used both PHP and Node.js, but I will go into more detail about that in the Portfolio section.</p>
+                <p class="mysql-text"> MySQL is the relational database management system I
+                    have studied. What amazes me most about MySQL is the performance of
+                    retrieving data and executing insertions.
+                </p>
+                <!-- <p style="font-size: 14px;" class="sass-text">I orginally planned on writing the website in SASS but due
+                    to time scarcity I have
+                    not come around it. Nevertheless I can attest that I can handle SASS and confindelty write CSS with
+                    SASS.
+                </p> -->
+
+
+            </article>
+
+
+            <article class="experience">
+                <h3>Experience</h3>
+                <div class="experience-inner">
+                    <div class="experience-inner-spellgeek">
+                        <div class="experience-inner-inner">
+                            <div class="spellgeek-logo">
+                                <a href="https://spellgeek.com" target="_blank" rel="noopener noreferrer">
+                                    <img src="images\spellgeek-logo.png" alt="spellgeek-logo">
+                                </a>
+                            </div>
+                            </a>
+                            <h4 class="headings-experience">Co-Founder at Spellgeek - Proofreading and editing service
+                            </h4>
+                            <p class="captions-experience">
+                                <i>Spellgeek</i> is a company founded by a friend and myself. An idea born from a
+                                problem I
+                                faced myself as a student,
+                                <i>Spellgeek</i> is an online service that offers academic proofreading and editing
+                                services
+                                to
+                                foreign language speakers. More
+                                about this in the portfolio section.</p>
+                        </div>
+                    </div>
+                    <div class="experience-inner-allgaier">
+                        <div class="experience-inner-inner">
+                            <div class="allgaier-logo">
+                                <a href="https://www.allgaier-group.com/en" target="_blank" rel="noopener noreferrer">
+                                    <img src="images\allgaier-logo.png" alt="allgaier-logo">
+                                </a>
+                            </div>
+
+                            <h4 class="headings-experience">Holiday Job at Allgaier Group in Uhingen (Germany)</h4>
+                            <p class="captions-experience">Duration: 9-weeks<br>
+                                Outcome: Furthering my knowledge in supply-chain management.</p>
+                        </div>
+                    </div>
+                    <div class="experience-inner-mk-electronic">
+                        <div class="experience-inner-inner">
+                            <div class="mk-electronic-logo">
+                                <a href="https://www.mk-electronic.de/" target="_blank" rel="noopener noreferrer">
+                                    <img src="images\mk-electronic-logo.png" alt="mk-electronic-logo">
+                                </a>
+                            </div>
+                            <h4 class="headings-experience">Apprentiship at MK-Electronic in Göppingen (Germany)</h4>
+                            <p class="captions-experience">Duration: 1 year<br>
+                                Outcome: Good understanding of customer care and supply-chain management.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+
+            <article class="education">
+                <h3>Education</h3>
+                <div class="education-inner">
+                    <div class="education-inner-codespace">
+                        <div class="education-inner-inner">
+                            <div class="codespace-logo">
+                                <a href="https://www.codespace.co.za/" target="_blank" rel="noopener noreferrer">
+                                    <img src="images\codespace-primary-logo.svg" alt="codespace-logo">
+                                </a>
+                            </div>
+                            <h4 class="headings-education">Web Development Intensive Course</h4>
+                            <p class="captions-education">Duration: 15-weeks<br>
+                                Outcome: Good foundations for furthering my knowledge in Web-development.</p>
+                        </div>
+                    </div>
+                    <div class="education-inner-stellenbosch">
+                        <div class="education-inner-inner">
+                            <div class="sun-logo">
+                                <a href="http://www.sun.ac.za/english" target="_blank" rel="noopener noreferrer">
+                                    <img src="images\sun-logo.svg" alt="sun-logo">
+                                </a>
+                            </div>
+                            <h4 class="headings-education">BA - Politics, Philosophy & Economics</h4>
+                            <p class="captions-education">Duration: 4 years<br>
+                                Outcome: Holistic understanding of the interconnectivity of all three fields.</p>
+                        </div>
+                    </div>
+                    <div class="education-inner-dhps">
+                        <div class="education-inner-inner">
+                            <div class="dhps-logo">
+                                <a href="http://www.dhps-windhoek.de/" target="_blank" rel="noopener noreferrer">
+                                    <img src="images\dhps-logo.png" alt="dhps-logo">
+                                </a>
+                            </div>
+                            <h4 class="headings-education">DIAP - German Matriculation</h4>
+                            <p class="captions-education">Duration: 3 years<br>
+                                Outcome: Made me ready for varsity. </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="portfolio">
+                <h3>Portfolio</h3>
+
+                <div class="portfolio-websites">
+
+                    <div class="flip_spellgeek">
+                        <div class="flip_inner_spellgeek">
+                            <div class="flip_front_spellgeek">
+                                <img class="img_spellgeek" src="images/spellgeek.gif" alt="spellgeek_logo">
+                            </div>
+                            <div class="flip_back_spellgeek">
+                                <p style="font-size: 14px;"><a href="https://spellgeek.com" target="_blank"
+                                        rel="noopener noreferrer"><i>Spellgeek</i> </a>was my first serious
+                                    entrepreneurial
+                                    venture
+                                    which I founded with a good friend from Stellenbosch University.
+                                    The website offers academic proofreading and editing services to foreign
+                                    language speakers. I contributed to the layout,
+                                    design and code of the website. The business is currently on hold while we
+                                    continue to raise capital.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="flip-hotel-booking-form">
+                        <div class="flip-inner-hotel-booking-form">
+                            <div class="flip-front-hotel-booking-form">
+                                <img class="img-hotel-booking-form" src="images/hotel-booking-form.png"
+                                    alt="hotel-booking-form-logo">
+                            </div>
+                            <div class="flip-back-hotel-booking-form">
+                                <p style="font-size: 14px;">The <a
+                                        href="https://hotel-booking-form.justusvoigt.com/index.php" target="_blank"
+                                        rel="noopener noreferrer"><i>Hotel Booking Form </i> </a> was my first
+                                    introduction to
+                                    MySQL in conjunction with PHP. The application allows the user to
+                                    input their first and last name, choose a check in and check out date, and
+                                    finally, select one of four hotel options.
+                                    The booking information is summarized and displayed back to the user. The
+                                    booking is only written to the database when
+                                    the user confirms the information. If a duplicate booking exists, the user is
+                                    notified. Otherwise, the booking gets
+                                    confirmed.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="flip-umthunzi">
+                        <div class="flip-inner-umthunzi">
+                            <div class="flip-front-umthunzi">
+                                <img class="img-umthunzi" src="images/umthunzi.png" alt="umthunzi-logo">
+                            </div>
+                            <div class="flip-back-umthunzi">
+                                <p style="font-size: 14px;"><a href="https://umthunzi.justusvoigt.com/" target="_blank"
+                                        rel="noopener noreferrer"><i>Umthunzi</i></a> is a community-supported
+                                    agriculture
+                                    social enterprise that puts the end-user (customer) in direct contact with
+                                    small to medium-scale farmers in the surroundings of Cape Town. I designed a
+                                    Facebook messenger integration application
+                                    for<a href="https://umthunzi.justusvoigt.com/" target="_blank"
+                                        rel="noopener noreferrer"> <i>Umthunzi</i></a> that captures the list of
+                                    available produce lists input by
+                                    farmers and sends that information to a database
+                                    where it is summarised and sent to an e-commerce plugin.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="flip-todo">
+                        <div class="flip-inner-todo">
+                            <div class="flip-front-todo">
+                                <img class="img-todo" src="images/todo.png" alt="todo-logo">
+                            </div>
+                            <div class="flip-back-todo">
+                                <p style="font-size: 14px;"> The <a href="https://to-do-app.justusvoigt.com"
+                                        target="_blank" rel="noopener noreferrer"><i>To-Do-App </i></a>is a PHP
+                                    application that
+                                    includes a
+                                    signup page, a login page, and the app itself. The entire signup and
+                                    login process is up-to-date with the highest security standards. The app writes
+                                    all the user’s to do list entries to a
+                                    database. When a task is done it will strike through the item, marking it as
+                                    done. The user is still able to see
+                                    their entries when they next login.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <a class="github" href="https://github.com/Sylver11" target="_blank">
+            <h5 class="icon-caption" style="font-size: 12px; text-decoration: none!important; color: white;">Check out
+                my
+                repos at GitHub</h5>
+            <div class="github-logo">
+
+                <img class="github-img" src="images/github-logo.png" alt="github-logo">
+            </div>
+        </a>
+        <a class="linkedin" href="https://linkedin.com/in/justus-voigt" target="_blank">
+            <h5 class="icon-caption" style="font-size: 12px; color: white;">Follow me on LinkedIn</h5>
+            <div class="linkedin-logo">
+                <img class="linkedin-img" src="images/linkedin-logo.png" alt="linkedin-logo">
+            </div>
+        </a>
+        <a class="mail" href="mailto:justus.sylvester@hotmail.de">
+            <h5 class="icon-caption" style="font-size: 12px; text-decoration: none!important; color: white;">Send me a
+                message here</h5>
+            <div class="email">
+                <img class="email-img" src="images/email-logo.png" alt="email-logo">
+            </div>
+        </a>
+
+
+
+
+    </footer>
+
+    <script type="text/javascript" src="scripts/bodyscrolllock.js"></script>
+    <script type="text/javascript" src="scripts/jquery.mousewheel.js"></script>
+
+    <script>
+        let delta = 0;
+        var status;
+        var scrollMoving = 0;
+
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                $('main').css("opacity", $(window).scrollTop() / 700)
+
+                $('.parallax').css("opacity", 1 - $(window).scrollTop() / 800);
+                // $('.caption').css("opacity", 1);
+                // $('.parallax').children().css(
+                //     function (e) {
+                //         return false;
+                //     });
+            }).children().css(function (e) {
+                return false;
+            });;
+
+            $(".html-img").hover(function () {
+                $(".html-text").toggleClass("html-text-show");
+            });
+            $(".css-img").hover(function () {
+                $(".css-text").toggleClass("css-text-show");
+            });
+            $(".js-img").hover(function () {
+                $(".js-text").toggleClass("js-text-show");
+            });
+            $(".jq-img").hover(function () {
+                $(".jq-text").toggleClass("jq-text-show");
+            });
+            $(".php-img").hover(function () {
+                $(".php-text").toggleClass("php-text-show");
+            });
+            $(".mysql-img").hover(function () {
+                $(".mysql-text").toggleClass("mysql-text-show");
+            });
+
+            $(".sass-img").hover(function () {
+                $(".sass-text").toggleClass("sass-text-show");
+            });
+
+
+            $("button").click(function () {
+                $("button").toggleClass("is-active");
+                $('.navbar-container').toggleClass('navbar-is-active');
+                $('section').toggleClass('section-deactivated');
+                $('.navbar').toggleClass('navbar-active');
+            })
+
+            $("body").mousewheel(function (event, delta) {
+                // console.log(event.deltaX, event.deltaY, event.deltaFactor);
+                if (delta > 0) {
+                    scrollMoving--;
+                } else {
+                    scrollMoving++;
+                };
+                if (scrollMoving <= -1) {
+                    scrollMoving = 1
+                } else if (scrollMoving >= 30) {
+                    scrollMoving = 29;
+                }
+                if (scrollMoving >= 1 &&
+                    scrollMoving <= 6) {
+                    status = "introSection";
+
+                } else if (scrollMoving >= 7 &&
+                    scrollMoving <=
+                    12) {
+                    status = "skillsSection";
+
+                } else if (scrollMoving >= 13 &&
+                    scrollMoving <=
+                    18) {
+                    status = "experienceSection";
+                } else if (scrollMoving >= 19 &&
+                    scrollMoving <=
+                    24) {
+                    status = "educationSection";
+                } else if (scrollMoving >= 25 &&
+                    scrollMoving <=
+                    30) {
+                    status = "portfolioSection";
+                }
+                getWhatever(status);
+
+
+                //locking the screen the moment the scrollMoving is below or equal to 2
+                const targetElement = document.querySelector("body");
+                if (scrollMoving >= 3) {
+                    console.log('higher than 4');
+                    console.log(bodyScrollLock.disableBodyScroll(targetElement));
+
+                    // 3. ...in some event handler after hiding the target element...
+                } else { // 2. ...in some event handler after showing the target element...disable body scroll
+                    // bodyScrollLock.enableBodyScroll(targetElement);
+                    bodyScrollLock.clearAllBodyScrollLocks();
+                }
+            });
+
+
+            // Parallax Effect of Title Picture
+
+            // Populate images from data attributes.
+            var scrolled = $(window).scrollTop()
+            $('.parallax').each(function (index) {
+                var imageSrc = $(this).data('image-src')
+                var imageHeight = $(this).data('height')
+                $(this).css('background-image', 'url(' + imageSrc + ')')
+                $(this).css('height', imageHeight)
+
+                // Adjust the background position.
+                var initY = $(this).offset().top
+                var height = $(this).height()
+                var diff = scrolled - initY
+                var ratio = Math.round((diff / height) * 100)
+                $(this).css('background-position', 'center ' + parseInt(-(ratio *
+                        1.5)) +
+                    'px')
+            })
+
+            // Attach scroll event to window. Calculate the scroll ratio of each element
+            // and change the image position with that ratio.
+            // https://codepen.io/lemagus/pen/RWxEYz
+            $(window).scroll(function () {
+                var scrolled = $(window).scrollTop()
+                $('.parallax').each(function (index, element) {
+                    var initY = $(this).offset().top
+                    var height = $(this).height()
+                    var endY = initY + $(this).height()
+
+                    // Check if the element is in the viewport.
+                    var visible = isInViewport(this)
+                    if (visible) {
+                        var diff = scrolled - initY
+                        var ratio = Math.round((diff / height) * 100)
+                        $(this).css('background-position', 'center ' + parseInt(-(
+                            ratio *
+                            1.5)) + 'px');
+                        scrollMoving = 0;
+                    }
+                })
+
+
+
+                // console.log(defaultStop);
+                // Check if the element is in the viewport.
+                // http://www.hnldesign.nl/work/code/check-if-element-is-visible/
+                function isInViewport(node) {
+                    // Am I visible? Height and Width are not explicitly necessary in visibility
+                    // detection, the bottom, right, top and left are the essential checks. If an
+                    // image is 0x0, it is technically not visible, so it should not be marked as
+                    // such. That is why either width or height have to be > 0.
+                    var rect = node.getBoundingClientRect()
+                    return (
+                        (rect.height > 0 || rect.width > 0) &&
+                        rect.bottom >= 0 &&
+                        rect.right >= 0 &&
+                        rect.top <= (window.innerHeight || document.documentElement
+                            .clientHeight) &&
+                        rect.left <= (window.innerWidth || document.documentElement
+                            .clientWidth)
+                    )
+                }
+            })
+        })
+
+
+
+
+
+
+
+
+        ////////////////function that populates the html ///////////////////////
+        function getWhatever(status) {
+            console.log(scrollMoving);
+            // console.log(status);
+            switch (status) {
+                case "introSection":
+                    $('#introButton').addClass('selected')
+                    $('#skillsButton').removeClass('selected')
+                    $('#portfolioButton').removeClass('selected')
+                    $('#educationButton').removeClass('selected')
+                    $('#experienceButton').removeClass('selected')
+                    $('.intro').css("display", "flex")
+                    $('.experience').css("display", "none")
+                    $('.skills').css("display", "none")
+                    $('.education').css("display", "none")
+                    $('.portfolio').css("display", "none")
+                    break;
+
+                case "skillsSection":
+                    $('#skillsButton').addClass('selected')
+                    $('#introButton').removeClass('selected')
+                    $('#experienceButton').removeClass('selected')
+                    $('#portfolioButton').removeClass('selected')
+                    $('#educationButton').removeClass('selected')
+                    $('.skills').css("display", "flex")
+                    $('.intro').css("display", "none")
+                    $('.experience').css("display", "none")
+                    $('.portfolio').css("display", "none")
+                    $('.education').css("display", "none")
+                    break;
+
+                case "experienceSection":
+                    $('#experienceButton').addClass('selected')
+                    $('#skillsButton').removeClass('selected')
+                    $('#educationButton').removeClass('selected')
+                    $('#introButton').removeClass('selected')
+                    $('#portfolioButton').removeClass('selected')
+                    $('.experience').css("display", "flex")
+                    $('.skills').css("display", "none")
+                    $('.intro').css("display", "none")
+                    $('.portfolio').css("display", "none")
+                    $('.education').css("display", "none")
+                    break;
+
+                case "educationSection":
+                    $('#educationButton').addClass('selected')
+                    $('#portfolioButton').removeClass('selected')
+                    $('#experienceButton').removeClass('selected')
+                    $('#skillsButton').removeClass('selected')
+                    $('#introButton').removeClass('selected')
+                    $('.education').css("display", "flex")
+                    $('.experience').css("display", "none")
+                    $('.skills').css("display", "none")
+                    $('.intro').css("display", "none")
+                    $('.portfolio').css("display", "none")
+                    break;
+
+                case "portfolioSection":
+                    $('#portfolioButton').addClass('selected')
+                    $('#educationButton').removeClass('selected')
+                    $('#skillsButton').removeClass('selected')
+                    $('#introButton').removeClass('selected')
+                    $('#experienceButton').removeClass('selected')
+                    $('.portfolio').css("display", "flex")
+                    $('.education').css("display", "none")
+                    $('.experience').css("display", "none")
+                    $('.skills').css("display", "none")
+                    $('.intro').css("display", "none")
+            };
+        };
+    </script>
+
+
+
+
+
+</body>
+
+</html>

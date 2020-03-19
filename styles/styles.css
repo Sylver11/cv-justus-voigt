@@ -1,0 +1,115 @@
+body {
+    margin: 0px;
+    padding: none;
+    font-family: 'PT Serif',
+        serif;
+    background-color: white;
+}
+
+
+h3 {
+    letter-spacing: 7px;
+}
+
+
+h4 {
+    margin: 5px 5px 5px 0px;
+    letter-spacing: 1px;
+}
+
+h5 {
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+p {
+    margin: 10px 10px 10px 0px;
+    letter-spacing: 1px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    margin-top: -60px;
+    -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    -o-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+    z-index: 2;
+}
+
+
+
+/* section on the side containing all the content */
+section {
+    -webkit-transform: skewY(5deg);
+    -moz-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    -o-transform: skewY(5deg);
+    transform: skewY(5deg);
+    width: 80%;
+    margin-top: 60px;
+    height: 500px;
+    flex-shrink: 3;
+    flex-direction: column;
+}
+
+.section-deactivated {
+    visibility: hidden;
+}
+
+
+
+.intro {
+    display: none;
+    animation-name: contentChange;
+    animation-duration: 0.7s;
+    flex-direction: column;
+}
+
+.skills {
+    display: none;
+    animation-name: contentChange;
+    animation-duration: 0.7s;
+    flex-direction: column;
+
+}
+
+.experience {
+    display: none;
+    animation-name: contentChange;
+    animation-duration: 0.7s;
+    flex-direction: column;
+}
+
+.education {
+    display: none;
+    flex-direction: column;
+    animation-name: contentChange;
+    animation-duration: 0.7s;
+}
+
+.portfolio {
+    display: none;
+    animation-name: contentChange;
+    animation-duration: 0.7s;
+    flex-direction: column;
+}
+
+@keyframes contentChange {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

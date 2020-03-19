@@ -1,0 +1,80 @@
+.education-inner {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.education-inner-inner {
+    margin-left: 10px;
+}
+
+.education-inner-codespace {
+    width: 75%;
+    height: 140px;
+    /* margin: 10px 40px 40px 40px; */
+    margin: auto;
+    border: grey;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.captions-education {
+    font-size: 13px;
+}
+
+
+.codespace-logo {
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+.codespace-logo img {
+    width: 100%;
+}
+
+
+.education-inner-stellenbosch {
+    width: 80%;
+    height: 173px;
+    /* margin-bottom: 40px; */
+    margin: auto;
+    margin-top: 20px;
+    border: grey;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.sun-logo {
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.sun-logo img {
+    width: 100%;
+}
+
+.education-inner-dhps {
+    width: 70%;
+    height: 160px;
+    border: grey;
+    border-style: solid;
+    border-width: 1px;
+    /* margin-left: 70px; */
+    margin: auto;
+    margin-top: 20px;
+}
+
+.dhps-logo {
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.dhps-logo img {
+    width: 100%;
+}

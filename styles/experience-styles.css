@@ -1,0 +1,85 @@
+.experience-inner {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.experience-inner-inner {
+    margin-left: 10px;
+}
+
+.experience-inner-mk-electronic {
+    width: 80%;
+    height: 140px;
+    /* margin: 20px 40px 40px 40px; */
+    margin: auto;
+    margin-top: 20px;
+    border: grey;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.mk-electronic-logo {
+    width: 150px;
+    margin-top: 10px;
+
+
+
+}
+
+.mk-electronic-logo img {
+    width: 100%;
+    background-color: grey;
+    padding: 3px;
+
+}
+
+
+.experience-inner-spellgeek {
+    width: 85%;
+    height: 170px;
+    /* margin: 10px 40px 20px 40px */
+    margin: auto;
+    border: grey;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.spellgeek-logo {
+    width: 150px;
+    margin-top: 10px;
+
+}
+
+.spellgeek-logo img {
+    width: 100%;
+    /* background-color: grey; */
+}
+
+.captions-experience {
+    font-size: 13px;
+}
+
+.experience-inner-allgaier {
+    width: 75%;
+    height: 130px;
+    /* margin: 10px 40px 20px 40px; */
+    margin: auto;
+    margin-top: 20px;
+    border: grey;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.allgaier-logo {
+    width: 150px;
+    margin-top: 10px;
+
+}
+
+.allgaier-logo img {
+    width: 100%;
+    /* background-color: grey; */
+}
