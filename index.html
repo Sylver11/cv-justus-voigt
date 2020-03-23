@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="images/Justus-Sylvester.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link href="styles/hamburgers.css" rel="stylesheet">
     <link href="styles/intro-styles.css" rel="stylesheet">
@@ -68,16 +69,16 @@
                 scrollMoving <= 10) {
                 status = "introSection";
             } else if (scrollMoving >= 11 &&
-                scrollMoving <= 16) {
+                scrollMoving <= 20) {
                 status = "skillsSection";
-            } else if (scrollMoving >= 17 &&
-                scrollMoving <= 22) {
+            } else if (scrollMoving >= 21 &&
+                scrollMoving <= 30) {
                 status = "experienceSection";
-            } else if (scrollMoving >= 23 &&
-                scrollMoving <= 28) {
+            } else if (scrollMoving >= 31 &&
+                scrollMoving <= 40) {
                 status = "educationSection";
-            } else if (scrollMoving >= 29 &&
-                scrollMoving <= 34) {
+            } else if (scrollMoving >= 41 &&
+                scrollMoving <= 43) {
                 status = "portfolioSection";
             }
             //everytime a value changes here the function gets called.Because otherwise it would only change on the next scroll 
@@ -94,14 +95,14 @@
             </button>
             <nav class="navbar" id="navbar2">
                 <ol id="list_total" data-tag="channelList">
-                    <li class="li_navbar" id="introButton" onclick="switchChannel(this)" value="10"><a>Intro</a></li>
+                    <li class="li_navbar" id="introButton" onclick="switchChannel(this)" value="8"><a>Intro</a></li>
                     <li class="li_navbar" id="skillsButton" onclick="switchChannel(this)" value="15"><a>Languages</a>
                     </li>
-                    <li class="li_navbar" id="experienceButton" onclick="switchChannel(this)" value="20">
+                    <li class="li_navbar" id="experienceButton" onclick="switchChannel(this)" value="25">
                         <a>Experience</a></li>
-                    <li class="li_navbar" id="educationButton" onclick="switchChannel(this)" value="25"><a>Education</a>
+                    <li class="li_navbar" id="educationButton" onclick="switchChannel(this)" value="35"><a>Education</a>
                     </li>
-                    <li class="li_navbar" id="portfolioButton" onclick="switchChannel(this)" value="30"><a>Portfolio</a>
+                    <li class="li_navbar" id="portfolioButton" onclick="switchChannel(this)" value="42"><a>Portfolio</a>
                     </li>
                 </ol>
             </nav>
@@ -259,16 +260,16 @@
                 <h3>Languages</h3>
                 <div class="logos">
                     <!-- <div class="html-logo"> -->
-                    <img class="html-img" src="images/html_logo_new.png" alt="html_logo">
+                    <!-- <img class="html-img" src="images/html_logo_new.png" alt="html_logo"> -->
                     <!-- </div> -->
                     <!-- <div class="css-logo"> -->
-                    <img class="css-img" src="images/css_logo_new.png" alt="css_logo">
+                    <!-- <img class="css-img" src="images/css_logo_new.png" alt="css_logo"> -->
                     <!-- </div> -->
                     <!-- <div class="js-logo"> -->
                     <img class="js-img" src="images/js_logo_new.png" alt="js_logo">
                     <!-- </div> -->
                     <!-- <div class="jq-logo"> -->
-                    <img class="jq-img" src="images/jquery_logo_new.gif" alt="jq_logo">
+                    <!-- <img class="jq-img" src="images/jquery_logo_new.gif" alt="jq_logo"> -->
                     <!-- </div> -->
                     <!-- <div class="php-logo"> -->
                     <img class="php-img" src="images/php-logo.png" alt="php-logo">
@@ -283,7 +284,7 @@
                     <!-- <img class="sass-img" src="images/sass-logo.svg" alt="sass-logo"> -->
                     <!-- </div> -->
                 </div>
-
+<!-- 
                 <p class="html-text">As every developer’s career starts with HTML, mine did
                     too. HTML is a foundational language and I can confidently claim
                     to have a good understanding of it.
@@ -295,7 +296,7 @@
                     introduction section, but
                     getting it where it is now took some time. Despite this, I feel that CSS is a powerful language with
                     a broad spectrum of
-                    functionalities that are underappreciated.</p>
+                    functionalities that are underappreciated.</p> -->
                 <p class="js-text">Most of the functionality of this website was built using
                     JavaScript. For example, the scrollLock function which actives
                     the moment my title picture is outside the viewport and the custom scroll bar on the left which
@@ -304,12 +305,12 @@
                     of this website by
                     running a node.js server.
                 </p>
-                <p class="jq-text">Jquery is the Swiss Army knife of Javascript libraries.
+                <!-- <p class="jq-text">Jquery is the Swiss Army knife of Javascript libraries.
                     Again, much of the front-end of this website is based on Jquery
                     code like this text which uses a toggle function to add and remove a class. I personally love Jquery
                     just because it
                     saves me so much time.
-                </p>
+                </p> -->
                 <p class="php-text">Most of the applications under the Portfolio section are
                     written in PHP. For the Umthunzi Farming Community project I
                     used both PHP and Node.js, but I will go into more detail about that in the Portfolio section.</p>
@@ -536,13 +537,12 @@
                 <img class="linkedin-img" src="images/linkedin-logo.png" alt="linkedin-logo">
             </div>
         </a>
-        <a class="mail" href="mailto:justus.sylvester@hotmail.de">
-            <!-- <h5 class="icon-caption" style="font-size: 12px; text-decoration: none!important; color: white;">Send me a
-                message here</h5> -->
+        <!-- <a class="mail" href="mailto:justus.sylvester@hotmail.de">
+       
             <div class="email">
                 <img class="email-img" src="images/email-logo.png" alt="email-logo">
             </div>
-        </a>
+        </a> -->
 
 
 
@@ -620,29 +620,29 @@
                 };
                 if (scrollMoving <= -1) {
                     scrollMoving = 1
-                } else if (scrollMoving >= 30) {
-                    scrollMoving = 29;
+                } else if (scrollMoving >= 44) {
+                    scrollMoving = 43;
                 }
                 if (scrollMoving >= 1 &&
-                    scrollMoving <= 6) {
+                    scrollMoving <= 10) {
                     status = "introSection";
 
-                } else if (scrollMoving >= 7 &&
+                } else if (scrollMoving >= 11 &&
                     scrollMoving <=
-                    12) {
+                    20) {
                     status = "skillsSection";
 
-                } else if (scrollMoving >= 13 &&
-                    scrollMoving <=
-                    18) {
-                    status = "experienceSection";
-                } else if (scrollMoving >= 19 &&
-                    scrollMoving <=
-                    24) {
-                    status = "educationSection";
-                } else if (scrollMoving >= 25 &&
+                } else if (scrollMoving >= 21 &&
                     scrollMoving <=
                     30) {
+                    status = "experienceSection";
+                } else if (scrollMoving >= 31 &&
+                    scrollMoving <=
+                    40) {
+                    status = "educationSection";
+                } else if (scrollMoving >= 41 &&
+                    scrollMoving <=
+                    42) {
                     status = "portfolioSection";
                 }
                 getWhatever(status);

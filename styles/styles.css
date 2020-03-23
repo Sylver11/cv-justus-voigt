@@ -1,8 +1,9 @@
 body {
     margin: 0px;
     padding: none;
-    font-family: 'PT Serif',
-        serif;
+    font-family: 'Baloo 2';
+    /* 'PT Serif',
+        serif; */
     background-color: white;
 }
 
@@ -57,7 +58,7 @@ section {
     transform: skewY(4deg);
     width: 80%;
     margin-top: 60px;
-    height: 500px;
+    height: 600px;
     flex-shrink: 3;
     flex-direction: column;
 }

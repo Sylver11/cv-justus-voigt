@@ -18,7 +18,7 @@
 
 
 
-.html-img {
+/* .html-img {
     width: 80px;
     height: 110px;
     background-color: transparent;
@@ -54,12 +54,12 @@
     -webkit-transform: scale(1.1);
     transform: scale(1.5);
     z-index: 2;
-}
+} */
 
 
 
 
-
+/* 
 .css-text {
     display: none;
     font-size: 14px;
@@ -94,7 +94,7 @@
     -webkit-transform: scale(1.1);
     transform: scale(1.5);
     z-index: 2;
-}
+} */
 
 
 
@@ -139,7 +139,7 @@
 
 
 
-
+/* 
 .jq-text {
     display: none;
     font-size: 14px;
@@ -174,7 +174,7 @@
     -webkit-transform: scale(1.1);
     transform: scale(1.5);
     z-index: 2;
-}
+} */
 
 
 .php-text {
