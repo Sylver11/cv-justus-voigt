@@ -95,7 +95,7 @@
             <nav class="navbar" id="navbar2">
                 <ol id="list_total" data-tag="channelList">
                     <li class="li_navbar" id="introButton" onclick="switchChannel(this)" value="10"><a>Intro</a></li>
-                    <li class="li_navbar" id="skillsButton" onclick="switchChannel(this)" value="15"><a>Skills</a>
+                    <li class="li_navbar" id="skillsButton" onclick="switchChannel(this)" value="15"><a>Languages</a>
                     </li>
                     <li class="li_navbar" id="experienceButton" onclick="switchChannel(this)" value="20">
                         <a>Experience</a></li>
@@ -256,7 +256,7 @@
 
 
             <article class="skills">
-                <h3>Skills</h3>
+                <h3>Languages</h3>
                 <div class="logos">
                     <!-- <div class="html-logo"> -->
                     <img class="html-img" src="images/html_logo_new.png" alt="html_logo">
@@ -272,9 +272,12 @@
                     <!-- </div> -->
                     <!-- <div class="php-logo"> -->
                     <img class="php-img" src="images/php-logo.png" alt="php-logo">
+                    <img class="clojurescript-img" src="images/clojurescript-logo.png" alt="clojurescript-logo">
+                    <img class="clojure-img" src="images/clojure-logo.png" alt="clojure-logo">
                     <!-- </div> -->
                     <!-- <div class="mysql-logo"> -->
                     <img class="mysql-img" src="images/mysql-logo.png" alt="mysql-logo">
+                    <img class="datomic-img" src="images/datomic-logo.png" alt="datomic-logo">
                     <!-- </div> -->
                     <!-- <div class="sass-logo"> -->
                     <!-- <img class="sass-img" src="images/sass-logo.svg" alt="sass-logo"> -->
@@ -314,6 +317,12 @@
                     have studied. What amazes me most about MySQL is the performance of
                     retrieving data and executing insertions.
                 </p>
+                <p class="datomic-text"> Working with Datomic has teached me some valuable skills one of them being: Datalog. Datomic has a very good datalog integration and works well with Clojure. Coming from a SQL world it is radically different but intriguing.
+                </p>
+                <p class="clojurescript-text"> ClojureScript is my front-end language of choice. I am using it with Reagent which is a ClojureScript library that enables one to do JS-React components using plain Clojure syntax. Creating beautiful front-end applications with little effort is REAL!
+                </p>
+                <p class="clojure-text"> As being functional I can safely say that Clojure was one of the most challenging languages I have learned so far. However, once internatlised the simplcity of doing things has made Clojure my go to language. 
+                </p>
                 <!-- <p style="font-size: 14px;" class="sass-text">I orginally planned on writing the website in SASS but due
                     to time scarcity I have
                     not come around it. Nevertheless I can attest that I can handle SASS and confindelty write CSS with
@@ -327,6 +336,20 @@
             <article class="experience">
                 <h3>Experience</h3>
                 <div class="experience-inner">
+                    <div class="experience-inner-allgaier">
+                        <div class="experience-inner-inner">
+                            <div class="allgaier-logo">
+                                <a href="https://www.cognician.com" target="_blank" rel="noopener noreferrer">
+                                    <img src="images\cognician-logo.png" alt="allgaier-logo">
+                                </a>
+                            </div>
+
+                            <h4 class="headings-experience">Tech internship at Cognician Software</h4>
+                            <p class="captions-experience">Duration: 10 months<br>
+                                Outcome: Advanded in Git, Clojure, Clojurescript, SCSS and Datomic</p>
+                        </div>
+                    </div>
+
                     <div class="experience-inner-spellgeek">
                         <div class="experience-inner-inner">
                             <div class="spellgeek-logo">
@@ -348,19 +371,7 @@
                                 about this in the portfolio section.</p>
                         </div>
                     </div>
-                    <div class="experience-inner-allgaier">
-                        <div class="experience-inner-inner">
-                            <div class="allgaier-logo">
-                                <a href="https://www.allgaier-group.com/en" target="_blank" rel="noopener noreferrer">
-                                    <img src="images\allgaier-logo.png" alt="allgaier-logo">
-                                </a>
-                            </div>
-
-                            <h4 class="headings-experience">Holiday Job at Allgaier Group in Uhingen (Germany)</h4>
-                            <p class="captions-experience">Duration: 9-weeks<br>
-                                Outcome: Furthering my knowledge in supply-chain management.</p>
-                        </div>
-                    </div>
+                    
                     <div class="experience-inner-mk-electronic">
                         <div class="experience-inner-inner">
                             <div class="mk-electronic-logo">
@@ -432,7 +443,7 @@
                                 <img class="img_spellgeek" src="images/spellgeek.gif" alt="spellgeek_logo">
                             </div>
                             <div class="flip_back_spellgeek">
-                                <p style="font-size: 14px;"><a href="https://spellgeek.com" target="_blank"
+                                <p style="font-size: 14px;"><a href="https://spellgeek.co.za" target="_blank"
                                         rel="noopener noreferrer"><i>Spellgeek</i> </a>was my first serious
                                     entrepreneurial
                                     venture
@@ -447,64 +458,13 @@
                     </div>
 
 
-
-
-
-                    <div class="flip-hotel-booking-form">
-                        <div class="flip-inner-hotel-booking-form">
-                            <div class="flip-front-hotel-booking-form">
-                                <img class="img-hotel-booking-form" src="images/hotel-booking-form.png"
-                                    alt="hotel-booking-form-logo">
-                            </div>
-                            <div class="flip-back-hotel-booking-form">
-                                <p style="font-size: 14px;">The <a
-                                        href="https://hotel-booking-form.justusvoigt.com/index.php" target="_blank"
-                                        rel="noopener noreferrer"><i>Hotel Booking Form </i> </a> was my first
-                                    introduction to
-                                    MySQL in conjunction with PHP. The application allows the user to
-                                    input their first and last name, choose a check in and check out date, and
-                                    finally, select one of four hotel options.
-                                    The booking information is summarized and displayed back to the user. The
-                                    booking is only written to the database when
-                                    the user confirms the information. If a duplicate booking exists, the user is
-                                    notified. Otherwise, the booking gets
-                                    confirmed.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="flip-umthunzi">
-                        <div class="flip-inner-umthunzi">
-                            <div class="flip-front-umthunzi">
-                                <img class="img-umthunzi" src="images/umthunzi.png" alt="umthunzi-logo">
-                            </div>
-                            <div class="flip-back-umthunzi">
-                                <p style="font-size: 14px;"><a href="https://umthunzi.justusvoigt.com/" target="_blank"
-                                        rel="noopener noreferrer"><i>Umthunzi</i></a> is a community-supported
-                                    agriculture
-                                    social enterprise that puts the end-user (customer) in direct contact with
-                                    small to medium-scale farmers in the surroundings of Cape Town. I designed a
-                                    Facebook messenger integration application
-                                    for<a href="https://umthunzi.justusvoigt.com/" target="_blank"
-                                        rel="noopener noreferrer"> <i>Umthunzi</i></a> that captures the list of
-                                    available produce lists input by
-                                    farmers and sends that information to a database
-                                    where it is summarised and sent to an e-commerce plugin.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
                     <div class="flip-todo">
                         <div class="flip-inner-todo">
                             <div class="flip-front-todo">
                                 <img class="img-todo" src="images/todo.png" alt="todo-logo">
                             </div>
                             <div class="flip-back-todo">
-                                <p style="font-size: 14px;"> The <a href="https://to-do-app.justusvoigt.com"
+                                <p style="font-size: 14px;"> The <a href="https://php-todo.justusvoigt.com"
                                         target="_blank" rel="noopener noreferrer"><i>To-Do-App </i></a>is a PHP
                                     application that
                                     includes a
@@ -519,6 +479,51 @@
                         </div>
                     </div>
 
+
+
+                    <div class="flip-umthunzi">
+                        <div class="flip-inner-umthunzi">
+                            <div class="flip-front-umthunzi">
+                                <img class="img-umthunzi" src="images/demeter-logo.png" alt="demeter-logo">
+                            </div>
+                            <div class="flip-back-umthunzi">
+                                <p style="font-size: 14px;"> 
+                                        The IOT world has taking me by storm. As such I have started a little project myself called <a href="https://demeter.justusvoigt.com/" target="_blank"
+                                        rel="noopener noreferrer"><i>Demeter</i></a> written in Python. 
+                                        The project involves an ESP8266 mircocontroller, relays and different sensors 
+                                        that measure the environment. Demeter is meant for a greenhouse or grow tent 
+                                        and can be controlled from the internet. I have incoperated google charts to represent data that is
+                                        constantly written to the database. This project is only in its infant shoes so watch this space! 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-hotel-booking-form">
+                        <div class="flip-inner-hotel-booking-form">
+                            <div class="flip-front-hotel-booking-form">
+                                <img class="img-hotel-booking-form" src="images/hotel-booking-form.png"
+                                    alt="hotel-booking-form-logo">
+                            </div>
+                            <div class="flip-back-hotel-booking-form">
+                                <p style="font-size: 14px;">The <a
+                                        href="https://php-hotel.justusvoigt.com/index.php" target="_blank"
+                                        rel="noopener noreferrer"><i>Hotel Booking Form </i> </a> was my first
+                                    introduction to
+                                    MySQL in conjunction with PHP. The application allows the user to
+                                    input their first and last name, choose a check in and check out date, and
+                                    finally, select one of four hotel options.
+                                    The booking information is summarized and displayed back to the user. The
+                                    booking is only written to the database when
+                                    the user confirms the information. If a duplicate booking exists, the user is
+                                    notified. Otherwise, the booking gets
+                                    confirmed.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
                 </div>
             </article>
         </section>
@@ -526,23 +531,23 @@
 
     <footer>
         <a class="github" href="https://github.com/Sylver11" target="_blank">
-            <h5 class="icon-caption" style="font-size: 12px; text-decoration: none!important; color: white;">Check out
+            <!-- <h5 class="icon-caption" style="font-size: 12px; text-decoration: none!important; color: white;">Check out
                 my
-                repos at GitHub</h5>
+                repos at GitHub</h5> -->
             <div class="github-logo">
 
                 <img class="github-img" src="images/github-logo.png" alt="github-logo">
             </div>
         </a>
         <a class="linkedin" href="https://linkedin.com/in/justus-voigt" target="_blank">
-            <h5 class="icon-caption" style="font-size: 12px; color: white;">Follow me on LinkedIn</h5>
+            <!-- <h5 class="icon-caption" style="font-size: 12px; color: white;">Follow me on LinkedIn</h5> -->
             <div class="linkedin-logo">
                 <img class="linkedin-img" src="images/linkedin-logo.png" alt="linkedin-logo">
             </div>
         </a>
         <a class="mail" href="mailto:justus.sylvester@hotmail.de">
-            <h5 class="icon-caption" style="font-size: 12px; text-decoration: none!important; color: white;">Send me a
-                message here</h5>
+            <!-- <h5 class="icon-caption" style="font-size: 12px; text-decoration: none!important; color: white;">Send me a
+                message here</h5> -->
             <div class="email">
                 <img class="email-img" src="images/email-logo.png" alt="email-logo">
             </div>
@@ -590,8 +595,17 @@
             $(".php-img").hover(function () {
                 $(".php-text").toggleClass("php-text-show");
             });
+            $(".clojure-img").hover(function () {
+                $(".clojure-text").toggleClass("clojure-text-show");
+            });
+            $(".clojurescript-img").hover(function () {
+                $(".clojurescript-text").toggleClass("clojurescript-text-show");
+            });
             $(".mysql-img").hover(function () {
                 $(".mysql-text").toggleClass("mysql-text-show");
+            });
+            $(".datomic-img").hover(function () {
+                $(".datomic-text").toggleClass("datomic-text-show");
             });
 
             $(".sass-img").hover(function () {
@@ -801,10 +815,6 @@
             };
         };
     </script>
-
-
-
-
 
 </body>
 
